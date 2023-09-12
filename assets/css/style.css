@@ -1,4 +1,11 @@
-body {
-    background-color: green;
-    color: red;
+/*link to google fonts */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Dela+Gothic+One&family=League+Gothic&display=swap');
+
+/* general styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
