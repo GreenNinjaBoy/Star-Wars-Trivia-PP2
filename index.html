@@ -23,18 +23,27 @@
     <!--rules of the game-->
     <div id="rules">
         <h2 id = "game-rules">Game Rules</h2>
-        <h3>This Game is based on the 9 main feature films (episode I - IX)</h3>
-        <button id="close-rules">Close</button>
+        <h3>This Game is based on the 9 main feature films (episodes I - IX)</h3>
+        <button id="close-rules" class="close-btn">Close</button>
         <ul>
             <li>Each quiz is made is made up of 20 random questions</li>
-            <li>The quiz has three different difficulties Padawan(easy), Jedi Knight (medium), or Jedi Master (Hard).</li>
+            <li>The quiz has three different difficulties Padawan (easy), Jedi Knight (medium), or Jedi Master (Hard).</li>
             <li>You will have 15 seconds to answer each question.</li>
             <li>Failure to answer within that time results in a automatic incorrect answer.</li>
             <li>To select an answer, simply click or tap (if on touch screen device) on the one you think is correct.</li>
             <li>Try not to cheat as this is ment to be fun.</li>
         </ul>
     </div>
-    <!---->
+    <!-- user being prompt to select their difficulty setting-->
+    <div id ="difficulty-setting">
+        <button id="close-difficulty" class="close-btn">close</button>
+        <h2>Choose you path to begin</h2>
+        <div>
+            <button id="easy" class="btn difficulty-selection">PADAWAN</button>
+            <button id="medium" class="btn diffulty-selection">JEDI KNIGHT</button>
+            <button id="hard" class="btn difficulty-selection">JEDI Master</button>
+        </div>
+    </div>
 
 
     <script src="assets/js/script.js"></script>
