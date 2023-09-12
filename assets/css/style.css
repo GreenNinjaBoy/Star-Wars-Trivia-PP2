@@ -9,3 +9,14 @@
     box-sizing: border-box;
 
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Leauge-Gothic, sans-serif;
+    text-align: center;
+    background-image: url("../images/millenium-falcon-image.webp");
+    background-position: center;
+    padding: 5px;
+}
