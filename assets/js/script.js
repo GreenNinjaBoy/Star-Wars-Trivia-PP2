@@ -35,6 +35,7 @@ function displayGameRules() {
     closeRulesButton.addEventListener("click", closeRules);
 
 }
+
 /**
  * This function will hide the rules and displays the main menu.
  */
