@@ -12,9 +12,12 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    font-family: Leauge-Gothic, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-family: League Gothic, sans-serif;
     text-align: center;
     background-image: url("../images/millenium-falcon-image.webp");
     background-position: center;
@@ -33,4 +36,19 @@ h2 {
     padding: 5px;
     font-size: 90%;
 }
-/* style for the 15 second timer
+
+/*style for game container card*/
+.game-container {
+    width: 800px;
+    max-width: 80%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/*style for the answer buttons*/
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}

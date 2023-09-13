@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="trivia, quiz, starwars, lightsaber">
+    <meta name="keywords" content="trivia, quiz, starwars, lightsaber" />
     <title>StarWars Trivia</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -12,63 +12,82 @@
   <body>
     <!--Quiz Header-->
     <header>
-        <h1>Star-Wars Trivia</h1>
+      <h1 id="trivia-heading">Star-Wars Trivia</h1>
     </header>
 
     <!--Main Menu for Quiz-->
-    <div id="quiz-menu" class="game-container">
-        <h2>Test Your Star-Wars Knowledge with this fun Online Quiz!</h2>
-        <button id="rules-btn" class="btn menu-btn">Quiz Rules</button>
-        <button id="game-btn" class="btn menu-btn">Begin Quiz</button>
-    </div>
-    <!--rules of the game-->
-    <div id="rules">
-        <h2 id = "game-rules">Game Rules</h2>
-        <h3>This Game is based on the 9 main feature films (episodes I - IX)</h3>
+    <div id="trivia-menu" class="game-container">
+      <h2>Test Your Star-Wars Knowledge with this fun Online Quiz!</h2>
+      <button id="rules-btn" class="btn menu-btn">Quiz Rules</button>
+      <button id="trivia-btn" class="btn menu-btn">Begin Quiz</button>
+      <!--rules of the game-->
+      <div id="rules">
+        <h2 id="game-rules" class="game-container">Game Rules</h2>
+        <h3>
+          This Game is based on the 9 main feature films (episodes I - IX)
+        </h3>
         <button id="close-rules" class="close-btn">Close</button>
         <ul>
-            <li>Each quiz is made is made up of 20 random questions</li>
-            <li>The quiz has three different difficulties Padawan (easy), Jedi Knight (medium), or Jedi Master (Hard).</li>
-            <li>You will have 15 seconds to answer each question.</li>
-            <li>Failure to answer results in a automatic incorrect answer.</li>
-            <li>To select an answer, simply click or tap (if on touch screen device) on the one you think is correct.</li>
-            <li>Try not to cheat as this is ment to be fun.</li>
+          <li>Each quiz is made is made up of 20 random questions</li>
+          <li>
+            The quiz has three different difficulties Padawan (easy), Jedi
+            Knight (medium), or Jedi Master (Hard).
+          </li>
+          <li>You will have 15 seconds to answer each question.</li>
+          <li>Failure to answer results in a automatic incorrect answer.</li>
+          <li>
+            To select an answer, simply click or tap (if on touch screen device)
+            on the one you think is correct.
+          </li>
+          <li>Try not to cheat as this is ment to be fun.</li>
         </ul>
+      </div>
     </div>
     <!-- user being prompt to select their difficulty setting-->
-    <div id ="difficulty-setting">
-        <button id="close-difficulty" class="close-btn">close</button>
-        <h2>Choose you path to begin</h2>
-        <div>
-            <button id="easy" class="btn difficulty-selection">PADAWAN</button>
-            <button id="medium" class="btn diffulty-selection">JEDI KNIGHT</button>
-            <button id="hard" class="btn difficulty-selection">JEDI MASTER</button>
-        </div>
+    <div id="difficulty-setting" class="game-container">
+      <button id="close-difficulty" class="close-btn">close</button>
+      <h2>Choose you path to begin</h2>
+      <div>
+        <button id="easy" class="btn difficulty-selection">PADAWAN</button>
+        <button id="medium" class="btn diffulty-selection">JEDI KNIGHT</button>
+        <button id="hard" class="btn difficulty-selection">JEDI MASTER</button>
+      </div>
     </div>
     <!--the main quiz area-->
-    <div id="trivia-area">
-        <button id="close-game">End Game</button>
-        <!-- main question area with countdown timer-->
-        <div id="question-area">
-            <h2>Question <span id="question-number">0</span>/20 <span id="timer">0</span></h2>
-            <p id="main-question">The Asked Question will go here!</p>
-        </div>
-    <!--the score display and the answer options container-->
-    <div id="main-answer-area">       
-    </div>
-    <button id="next-button" class="btn hide">Next Question</button>
-    <p>Score: <span id="score">0</span></p>    
+    <div id="trivia-area" class="game-container">
+      <button id="close-game">End Game</button>
+      <!-- main question area with countdown timer-->
+      <div id="question-area">
+        <h2>
+          Question <span id="question-number">0</span>/20
+          <span id="timer">0</span>
+        </h2>
+        <p id="main-question">The Asked Question will go here!</p>
+      </div>
+      <!--the score display and the answer options container-->
+      <div id="main-answer-area" class="btn-grid">
+        <button class="answer-btn">answer 1</button>
+        <button class="answer-btn">answer 2</button>
+        <button class="answer-btn">answer 3</button>
+        <button class="answer-btn">answer 4</button>
+      </div>
+      <button id="next-button" class="btn hide">Next Question</button>
+      <p>Score: <span id="score">0</span></p>
     </div>
     <!--div showing the user their final score and message for completed quiz-->
-    <div id="complete" class="hide container">
-        <p> Total Score: <span id="final-score">0</span>/20</p>
-        <p><span id="movie-quote">movie quote goes here</span></p>
-        <button id="retry-button" class="btn trivia-complete-button">Retry</button>
-        <button id="main-menu-button" class="btn return-to-menu-button">Main Menu</button>
+    <div id="complete" class="game-container">
+      <p>Total Score: <span id="final-score">0</span>/20</p>
+      <p><span id="movie-quote">movie quote goes here</span></p>
+      <button id="retry-button" class="btn trivia-complete-button">
+        Retry
+      </button>
+      <button id="main-menu-button" class="btn return-to-menu-button">
+        Main Menu
+      </button>
     </div>
     <!--footer section-->
     <footer>
-        <p>This quiz was created by Jamie Connell</p>
+      <p>This quiz was created by Jamie Connell</p>
     </footer>
     <!--link to javascript file-->
     <script src="assets/js/script.js"></script>
