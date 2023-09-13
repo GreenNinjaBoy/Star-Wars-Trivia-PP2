@@ -1,6 +1,7 @@
 /*link to google fonts */
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Dela+Gothic+One&family=League+Gothic&display=swap');
-
+/* link to CDN fonts which had the star wars themed font*/
+@import url('https://fonts.cdnfonts.com/css/star-wars');
 /* general styles */
 
 * {
@@ -17,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: League Gothic, sans-serif;
+    font-family: star wars, sans-serif;
     text-align: center;
     background-image: url("../images/millenium-falcon-image.webp");
     background-position: center;
@@ -26,9 +27,10 @@ body {
 
 /* styles for heading texts */
 h1 {
-    color: green;
+    color: #fff;
     font-size: 500%;
-    padding-top: 20px;
+    padding-top: 15px;
+    letter-spacing: 5px;
 }
 
 h2 {
