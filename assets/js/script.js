@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /**
  * Whilst displaying the rules, the main menu will be hiddden
- * ann wil add an event listener for the close button.
+ * and will add an event listener for the close button.
  */
 function displayGameRules() {
     gameRules.classList.remove("hide");
@@ -45,12 +45,48 @@ function closeRules() {
     triviaMenu.classList.remove("hide");
 
 }
-
+/**
+ * Displays the games difficulty options
+ * and when function is exucuted the difficulty buttons will be displayed for the user
+ * and add event listeners to the buttons.
+ */
 function triviaDifficultyPromt() {
 
+    /* this will get the button to close the difficulty menu
+    and will add an even listener to the button  */
+
+    const closeDifficultyPromt = document.getElementById("close-difficulty");
+    closeDifficultyPromt.addEventListener("click", closeDifficultyPromt);
+
+    //Displays the difficulty menu for the user
+    difficultySetting.classList.remove("hide");
+    triviaHeading.classList.add("hide");
+    triviaMenu.classList.add("hide");
+
+    //Displays difficulty buttons and also adds event listeners to them
+    const difficultyOptions = document.querySelectorAll(".difficulty-selection");
+    difficultyOptions.forEach((difficultySelection) => {
+        difficultySelection.addEventListener("click", function () {
+            difficultySetting.classList.add("hide");
+            if (this.getAttribute("id") === "easy") {
+                startPadawanTrivia();
+            } else if (this.getAttribute("id") === "medium") {
+                startJediKnightTrivia();
+            } else if (this.getAttribute("id") === "hard") {
+                startJediMasterTrivia();
+            }
+
+            // Allows button to exit the quiz and adds an event listener to it
+            const exitButton = document.getElementById("close-difficulty");
+            exitButton.addEventListener("click", closeDifficulty);
+        });
+    });
 }
 
 function closeDifficultyPromt() {
+    difficultySetting.classList.remove("hide");
+    triviaHeading.classList.add("hide");
+    triviaMenu.classList.add("hide");
 
 }
 
