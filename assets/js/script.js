@@ -55,8 +55,8 @@ function triviaDifficultyPromt() {
     /* this will get the button to close the difficulty menu
     and will add an even listener to the button  */
 
-    const closeDifficultyPromt = document.getElementById("close-difficulty");
-    closeDifficultyPromt.addEventListener("click", closeDifficultyPromt);
+    const closeDifficulty = document.getElementById("close-difficulty");
+    closeDifficulty.addEventListener("click", closeDifficultyPromt);
 
     //Displays the difficulty menu for the user
     difficultySetting.classList.remove("hide");
@@ -77,16 +77,16 @@ function triviaDifficultyPromt() {
             }
 
             // Allows button to exit the quiz and adds an event listener to it
-            const exitButton = document.getElementById("close-difficulty");
-            exitButton.addEventListener("click", closeDifficulty);
+            //const exitButton = document.getElementById("close-difficulty");
+            //exitButton.addEventListener("click", closeDifficulty);
         });
     });
 }
 
 function closeDifficultyPromt() {
-    difficultySetting.classList.remove("hide");
-    triviaHeading.classList.add("hide");
-    triviaMenu.classList.add("hide");
+    difficultySetting.classList.add("hide");
+    triviaHeading.classList.remove("hide");
+    triviaMenu.classList.remove("hide");
 
 }
 
