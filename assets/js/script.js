@@ -216,3 +216,16 @@ function timeup() {
     nextbutton.classList.remove("hide");
 }
 
+function checkAnswer(event) {
+    clearInterval(timerInterval); //this will stop the timer from counting.
+    mainAnswerArea.classList.add("no-pointer"); // this will prevent user form clicking when answer is selected.
+    correctAnswer = document.getElementById("correct");
+    const clickedButton = event.target;
+    if (clickedButton === correctAnswer) {
+        incrementScore();
+    } else {
+        this.classList.add("wrong-answer");
+    }
+    nextbutton.classList.remove("hide"); // should display the next question button.
+}
+
