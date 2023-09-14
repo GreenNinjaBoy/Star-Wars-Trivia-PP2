@@ -111,6 +111,7 @@ function closeTrivia() {
     triviaArea.classList.add("hide");
     triviaHeading.classList.remove("hide");
     triviaMenu.classList.remove("hide");
+    currentQuestionIndex = 0;
 }
 
 function startPadawanTrivia() {
@@ -147,7 +148,7 @@ function displayTriviaContent(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
-        button.classList.add('answer-button');
+        button.classList.add('btn');
         if (answer.correct) {
             button.id = "correct";
         } else {
@@ -163,11 +164,14 @@ function displayTriviaContent(question) {
 }
 
 function displayQuestionNumber() {
+    const questionNumber = document.getElementById("trivia-number");
+    questionNumber.innerText = currentQuestionIndex + 1;
+}
 
+function startTimer() {
+    timerInterval = setInterval(timer, 1000);
 }
 
 function checkAnswer() {
 
 }
-
-// Creating an object containing the Padawan (easy) questions.
