@@ -75,10 +75,6 @@ function triviaDifficultyPromt() {
             } else if (this.getAttribute("id") === "hard") {
                 startJediMasterTrivia();
             }
-
-            // Allows button to exit the quiz and adds an event listener to it
-            //const exitButton = document.getElementById("close-difficulty");
-            //exitButton.addEventListener("click", closeDifficulty);
         });
     });
 }
@@ -95,16 +91,18 @@ function closeTrivia() {
 }
 
 function startPadawanTrivia() {
-
+    triviaArea.classList.remove("hide");
 }
 
 function startJediKnightTrivia() {
-
+    triviaArea.classList.remove("hide");
 }
 
 function startJediMasterTrivia() {
-
+    triviaArea.classList.remove("hide");
 }
+
+
 
 function nextQuestion() {
 
