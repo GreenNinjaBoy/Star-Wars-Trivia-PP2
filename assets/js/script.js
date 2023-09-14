@@ -5,6 +5,14 @@ const difficultySetting = document.getElementById("difficulty-setting");
 const triviaArea = document.getElementById("trivia-area");
 const mainAnswerArea = document.getElementById("main-answer-area");
 
+// variable yet to be defined
+
+let correctAnswer;
+let timeLeft;
+let timeInterval;
+let score;
+let currentQuestionIndex;
+let shuffledQuestions;
 
 /* wait for the DOM to succesfully load before executing the first function
 which will deliver the menu buttons to the user and add event liseners to these buttons*/
@@ -89,6 +97,7 @@ function triviaDifficultyPromt() {
  * Hides difficulty menu and displays the main menu to user.
  */
 function closeDifficultyPromt() {
+    currentQuestionIndex = 0;
     difficultySetting.classList.add("hide");
     triviaHeading.classList.remove("hide");
     triviaMenu.classList.remove("hide");
@@ -106,10 +115,14 @@ function closeTrivia() {
 
 function startPadawanTrivia() {
     triviaArea.classList.remove("hide");
+    shuffledQuestions = padawanQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    currentQuestionIndex = 0;
+    nextQuestion();
 }
 
 function startJediKnightTrivia() {
     triviaArea.classList.remove("hide");
+
 }
 
 function startJediMasterTrivia() {
@@ -122,10 +135,36 @@ function nextQuestion() {
 
 }
 
-function displayTriviaContent() {
+function displayTriviaContent(question) {
+    //displays the question container
+    const questionContainer = document.getElementById("question");
 
+    // insert question content
+    questionContainer.innerText = question.question;
+
+    // a button is created for each answer associated with the question.
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn-grid');
+        if (answer.correct) {
+            button.id = "correct";
+        } else {
+            button.classList.add("inncorect");
+        }
+
+        // insert an event listener to button and appends it to the answer area
+        button.addEventListener("click", checkAnswer);
+        mainAnswerArea.appendChild(button);
+    });
+
+    displayQuestionNumber();
 }
 
 function displayQuestionNumber() {
 
 }
+
+
+
+// Creating an object containing the Padawan (easy) questions.
