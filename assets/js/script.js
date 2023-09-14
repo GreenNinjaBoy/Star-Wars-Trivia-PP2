@@ -169,3 +169,29 @@ function displayQuestionNumber() {
     questionNumber.innerText = currentQuestionIndex + 1;
 }
 
+/* insperation on how to implement code for the timer function 
+    were taken from https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz */
+
+/**
+ * Sets the interval time for the timer function
+ */
+
+function startTimer() {
+    timerInterval = setInterval(timer, 1000);
+}
+
+/**
+ * Checks whither the remaining time is above 0
+ * and decrements time if it is so. 
+ * Otherwise, timeup function will be called.
+ */
+
+function timer() {
+    if (timeLeft <= 0) {
+        timeup();
+    } else {
+        timeLeft--;
+    }
+    timeDisplay.innerHTML = 'Time: ' + timeLeft;
+}
+
