@@ -22,6 +22,14 @@ const padawanQuestions = [
             { text: "The Clone Wars", correct: false },
             { text: "The Phantom Menece", correct: true },
         ]
+    },
+    {
+        question: "who did Qui-Gon meet on Tatoween?",
+        answers: [
+            { text: "Luke Skywalker", correct: false },
+            { text: "Bobba Feat", correct: false },
+            { text: "Anikin Skywalker", correct: true },
+            { text: "Jabba the Hutt", correct: false },
+        ]
     }
-
 ];

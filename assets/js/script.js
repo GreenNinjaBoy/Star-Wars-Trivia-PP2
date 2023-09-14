@@ -5,7 +5,7 @@ const difficultySetting = document.getElementById("difficulty-setting");
 const triviaArea = document.getElementById("trivia-area");
 const mainAnswerArea = document.getElementById("main-answer-area");
 const nextButton = document.getElementById("next-button");
-
+const timeDisplay = document.getElementById("timer");
 // variable yet to be defined
 
 let correctAnswer;
@@ -14,7 +14,6 @@ let timerInterval;
 let score;
 let currentQuestionIndex;
 let shuffledQuestions;
-
 /* wait for the DOM to succesfully load before executing the first function
 which will deliver the menu buttons to the user and add event liseners to these buttons*/
 
@@ -134,8 +133,15 @@ function startJediMasterTrivia() {
 
 
 function nextQuestion() {
-    displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
-
+    clearInterval(timerInterval); // this will stop the timer form counting
+    if (currentQuestionIndex < 20) {
+        resetQuizContent();
+        displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
+        currentQuestionIndex++;
+        timer();
+    } else {
+        finalResult();
+    }
 }
 
 function displayTriviaContent(question) {
@@ -153,7 +159,7 @@ function displayTriviaContent(question) {
         if (answer.correct) {
             button.id = "correct";
         } else {
-            button.classList.add("inncorect");
+            button.classList.add("incorrect");
         }
 
         // insert an event listener to button and appends it to the answer area
@@ -213,7 +219,7 @@ function timeup() {
 
     // retrieves correct answer and adds class for correct answers to them.
     correctAnswer = document.getElementById("correct");
-    nextbutton.classList.remove("hide");
+    nextButton.classList.remove("hide");
 }
 
 function checkAnswer(event) {
@@ -226,7 +232,7 @@ function checkAnswer(event) {
     } else {
         this.classList.add("wrong-answer");
     }
-    nextbutton.classList.remove("hide"); // should display the next question button.
+    nextButton.classList.remove("hide"); // should display the next question button.
 }
 /* Listens for the user to click the next question button
     and call the function for the next question. */
@@ -261,3 +267,18 @@ function incrementScore() {
     document.getElementById("user-score").innerText = ++score;
 }
 
+function resetQuizContent() {
+    nextButton.classList.add("hide"); // will hide the next question button.
+    mainAnswerArea.classList.remove("no-pointer"); //allows user to click again in answer area.
+    timeLeft = 16; // will reset the max amount of time
+    startTimer(); // will reset the interval for the timer.
+
+    // will remove previous answer options
+    while (mainAnswerArea.firstChild) {
+        mainAnswerArea.removeChild(mainAnswerArea.firstChild);
+    }
+}
+
+function finalResult() {
+
+}
