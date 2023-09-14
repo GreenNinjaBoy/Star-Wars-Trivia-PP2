@@ -75,10 +75,19 @@ function triviaDifficultyPromt() {
             } else if (this.getAttribute("id") === "hard") {
                 startJediMasterTrivia();
             }
+
+            /*Gets the "end game" button to quit the quiz 
+              and adds an event listener to it*/
+            const endButton = document.getElementById("close-game");
+            endButton.addEventListener("click", closeTrivia);
+
         });
     });
 }
 
+/**
+ * Hides difficulty menu and displays the main menu to user.
+ */
 function closeDifficultyPromt() {
     difficultySetting.classList.add("hide");
     triviaHeading.classList.remove("hide");
@@ -86,8 +95,13 @@ function closeDifficultyPromt() {
 
 }
 
+/** 
+ * Hides Triva game and returns user to the main menu.
+ */
 function closeTrivia() {
-
+    triviaArea.classList.add("hide");
+    triviaHeading.classList.remove("hide");
+    triviaMenu.classList.remove("hide");
 }
 
 function startPadawanTrivia() {

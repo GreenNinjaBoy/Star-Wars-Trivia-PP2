@@ -13,5 +13,15 @@ const padawanQuestions = [
             { text: "Yellow", correct: false },
             { text: "Red", correct: false },
         ]
+    },
+    {
+        question: "What is the title of episode 1?",
+        answers: [
+            { text: "Return of the Jedi", correct: false },
+            { text: "Rise of Skywalker", correct: false },
+            { text: "The Clone Wars", correct: false },
+            { text: "The Phantom Menece", correct: true },
+        ]
     }
+
 ];
