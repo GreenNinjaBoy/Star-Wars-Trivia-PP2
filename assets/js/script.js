@@ -195,3 +195,24 @@ function timer() {
     timeDisplay.innerHTML = 'Time: ' + timeLeft;
 }
 
+/**
+ * creates an alert message that the users time is up
+ * and provides feedback on correct and incorrect answers.
+ */
+
+function timeup() {
+    alert("time run out you have!");
+    clearInterval(timerInterval); //This will stop the timer from counting.
+    mainAnswerArea.classList.add("no-pointer"); // this will prevent user form clicking when timer runs out
+
+    // retrieves incorrect answers and adds class for incorrect answers to them.
+    const wrongAnswers = document.querySelectorAll('.incorrect');
+    for (let wrongAnswer of wrongAnswers) {
+        wrongAnswer.classList.add('wrong-answer');
+    }
+
+    // retrieves correct answer and adds class for correct answers to them.
+    correctAnswer = document.getElementById("correct");
+    nextbutton.classList.remove("hide");
+}
+
