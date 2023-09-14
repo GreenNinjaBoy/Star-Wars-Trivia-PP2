@@ -249,4 +249,15 @@ function incrementScore() {
 
 nextButton.addEventListener("click", nextQuestion);
 
+/**
+ * gets the users current score in inrecments that score by 1.
+ */
+
+// the idea of how to implement this code was taken 
+// form the love maths walk through project.
+
+function incrementScore() {
+    score = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++score;
+}
 
