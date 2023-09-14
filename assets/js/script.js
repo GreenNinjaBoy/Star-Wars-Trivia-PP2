@@ -132,6 +132,7 @@ function startJediMasterTrivia() {
 
 
 function nextQuestion() {
+    displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
 
 }
 
@@ -146,7 +147,7 @@ function displayTriviaContent(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
-        button.classList.add('btn-grid');
+        button.classList.add('answer-button');
         if (answer.correct) {
             button.id = "correct";
         } else {
@@ -165,6 +166,8 @@ function displayQuestionNumber() {
 
 }
 
+function checkAnswer() {
 
+}
 
 // Creating an object containing the Padawan (easy) questions.
