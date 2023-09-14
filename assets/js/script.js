@@ -4,12 +4,13 @@ const gameRules = document.getElementById("rules");
 const difficultySetting = document.getElementById("difficulty-setting");
 const triviaArea = document.getElementById("trivia-area");
 const mainAnswerArea = document.getElementById("main-answer-area");
+const nextButton = document.getElementById("next-button");
 
 // variable yet to be defined
 
 let correctAnswer;
 let timeLeft;
-let timeInterval;
+let timerInterval;
 let score;
 let currentQuestionIndex;
 let shuffledQuestions;
@@ -168,10 +169,3 @@ function displayQuestionNumber() {
     questionNumber.innerText = currentQuestionIndex + 1;
 }
 
-function startTimer() {
-    timerInterval = setInterval(timer, 1000);
-}
-
-function checkAnswer() {
-
-}
