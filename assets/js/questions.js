@@ -31,5 +31,68 @@ const padawanQuestions = [
             { text: "Anikin Skywalker", correct: true },
             { text: "Jabba the Hutt", correct: false },
         ]
-    }
+    },
+    {
+        question: "What planet did Luke Skywalker grow up on?",
+        answers: [
+            { text: "Tatoween", correct: true },
+            { text: "Corasant", correct: false },
+            { text: "Naboo", correct: false },
+            { text: "Geo-nosis", correct: false },
+        ]
+    },
+    {
+        question: "Who is obi-wan Kenobis master?",
+        answers: [
+            { text: "Yoda", correct: false },
+            { text: "Count Duku", correct: false },
+            { text: "Mace Windu", correct: false },
+            { text: "Qui-gon Gin", correct: true },
+        ]
+    },
+    {
+        question: "who did Qui-Gon meet on Tatoween?",
+        answers: [
+            { text: "Luke Skywalker", correct: false },
+            { text: "Bobba Feat", correct: false },
+            { text: "Anikin Skywalker", correct: true },
+            { text: "Jabba the Hutt", correct: false },
+        ]
+    },
+    {
+        question: "1?",
+        answers: [
+            { text: "1", correct: true },
+            { text: "1", correct: false },
+            { text: "1", correct: false },
+            { text: "1", correct: false },
+        ]
+    },
+    {
+        question: "2",
+        answers: [
+            { text: "2", correct: false },
+            { text: "2", correct: false },
+            { text: "2", correct: false },
+            { text: "2", correct: true },
+        ]
+    },
+    {
+        question: "3",
+        answers: [
+            { text: "3", correct: false },
+            { text: "3", correct: false },
+            { text: "3", correct: true },
+            { text: "3", correct: false },
+        ]
+    },
+    {
+        question: "4",
+        answers: [
+            { text: "4", correct: true },
+            { text: "4", correct: false },
+            { text: "4", correct: false },
+            { text: "4", correct: false },
+        ]
+    },
 ];

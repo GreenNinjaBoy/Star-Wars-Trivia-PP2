@@ -134,7 +134,7 @@ function startJediMasterTrivia() {
 
 function nextQuestion() {
     clearInterval(timerInterval); // this will stop the timer form counting
-    if (currentQuestionIndex < 20) {
+    if (currentQuestionIndex < 5) {
         resetQuizContent();
         displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
         currentQuestionIndex++;
@@ -219,6 +219,7 @@ function timeup() {
 
     // retrieves correct answer and adds class for correct answers to them.
     correctAnswer = document.getElementById("correct");
+    correctAnswer.classList.add("correct-answer");
     nextButton.classList.remove("hide");
 }
 
@@ -281,5 +282,10 @@ function resetQuizContent() {
 }
 
 function finalResult() {
-
+    const triviaComplete = document.getElementById("trivia-complete");
+    const finalScore = document.getElementById("final-score");
+    mainAnswerArea.classList.remove("hide");
+    triviaHeading.classList.remove("hide");
+    triviaComplete.classList.remove("hide");
+    finalScore.innerText = score; // will display final result for the user
 }
