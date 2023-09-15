@@ -44,12 +44,20 @@ h2 {
     margin-left: 20px
 }
 
+/* style for paragraph texts */
+
+p {
+    font-size: 1.4rem;
+    padding-top: 15px;
+    color: inherit;
+}
+
 /*style for game container card*/
 .game-container {
     position: relative;
     width: 800px;
     max-width: 80%;
-    margin: 40px 5px;
+    margin: 200px 5px;
     background-color: #0e202b;
     border: 1px;
     border-radius: 10px;
@@ -133,7 +141,7 @@ h2 {
     color: #abdfff;
     border: none;
     border-radius: 20px;
-    font-family: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .close-btn:hover {
