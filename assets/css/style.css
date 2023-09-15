@@ -79,3 +79,17 @@ h2 {
     border-radius: 20px;
     box-shadow: 0px 0px 15px 5px #0e202b;
 }
+
+.correct-answer {
+    box-shadow: 0px 0px 15px 5px #76ffae;
+
+}
+
+.wrong-answer {
+    box-shadow: 0px 0px 15px 5px #f50e0b;
+}
+
+footer {
+    margin-top: auto;
+    color: white;
+}

@@ -227,6 +227,7 @@ function checkAnswer(event) {
     mainAnswerArea.classList.add("no-pointer"); // this will prevent user form clicking when answer is selected.
     correctAnswer = document.getElementById("correct");
     const clickedButton = event.target;
+    correctAnswer.classList.add("correct-answer");
     if (clickedButton === correctAnswer) {
         incrementScore();
     } else {
