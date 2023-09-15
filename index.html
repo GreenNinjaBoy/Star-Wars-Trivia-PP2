@@ -15,7 +15,7 @@
       href="favicon.ico.png"
     />
   </head>
-  <body id="body" class="main-body">
+  <body>
     <!--Quiz Header-->
     <header>
       <h1 id="trivia-heading">Star Wars Trivia</h1>
@@ -33,7 +33,6 @@
     <div id="rules" class="game-container hide">
       <h2 id="game-rules">Game Rules</h2>
       <h3>This Game is based on the 9 main feature films (episodes I - IX)</h3>
-      <button id="close-rules" class="close-btn">Close</button>
       <ul>
         <li>Each quiz is made is made up of 20 random questions</li>
         <li>
@@ -48,6 +47,7 @@
         </li>
         <li>Try not to cheat as this is ment to be fun.</li>
       </ul>
+      <button id="close-rules" class="close-btn">Close</button>
     </div>
 
     <!-- user being prompt to select their difficulty setting-->
@@ -55,11 +55,15 @@
       <button id="close-difficulty" class="close-btn">close</button>
       <h2>Choose you path to begin</h2>
       <div>
-        <button id="easy" class="btn difficulty-selection">PADAWAN</button>
-        <button id="medium" class="btn difficulty-selection">
+        <button id="easy" class="btn difficulty-selection menu-btn">
+          PADAWAN
+        </button>
+        <button id="medium" class="btn difficulty-selection menu-btn">
           JEDI KNIGHT
         </button>
-        <button id="hard" class="btn difficulty-selection">JEDI MASTER</button>
+        <button id="hard" class="btn difficulty-selection menu-btn">
+          JEDI MASTER
+        </button>
       </div>
     </div>
 
@@ -67,7 +71,6 @@
 
     <div id="trivia-area" class="game-container hide">
       <button id="close-game" class="close-btn">End Game</button>
-
       <!-- main question area with countdown timer-->
 
       <div id="question-area">

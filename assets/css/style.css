@@ -13,10 +13,8 @@
 
 body {
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: star wars, sans-serif;
     text-align: center;
@@ -29,7 +27,8 @@ body {
 h1 {
     color: #fff;
     font-size: 500%;
-    padding-top: 15px;
+    margin-top: 80px;
+    padding-top: 20px;
     letter-spacing: 5px;
 }
 
@@ -39,11 +38,20 @@ h2 {
     font-size: 90%;
 }
 
+/*style for quix timer*/
+
+#timer {
+    margin-left: 20px
+}
+
 /*style for game container card*/
 .game-container {
+    position: relative;
     width: 800px;
     max-width: 80%;
-    background-color: antiquewhite;
+    margin: 40px 5px;
+    background-color: #0e202b;
+    border: 1px;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -68,8 +76,29 @@ h2 {
     color: #abdfff;
     text-shadow: 0px 5px 20px #abdfff;
     font-weight: 600;
-    background-color: #0e202b;
-    display: block;
+    background: #0e202b;
+    display: inline-block;
+    padding: 10px;
+    width: 80%;
+    min-width: 180px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    border-style: solid;
+    border: none;
+    border-radius: 20px;
+
+    /*box-shadow: 0px 0px 15px 5px #0e202b;*/
+}
+
+.menu-btn {
+    color: #abdfff;
+    text-shadow: 0px 5px 20px #abdfff;
+    font-weight: 600;
+    background: #0e202b;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #0e202b 50%, white 50%);
+    transition: background-position 1s;
+    display: inline-block;
     padding: 10px;
     width: 80%;
     min-width: 180px;
@@ -77,8 +106,61 @@ h2 {
     font-size: 1.2rem;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px 5px #0e202b;
+    /*box-shadow: 0px 0px 15px 5px #0e202b;*/
 }
+
+.menu-btn:hover {
+    box-shadow: 0px 0px 15px 10px #6fbafc;
+
+    color: #0e202b;
+    background-position: -100% 0;
+
+
+}
+
+/*style for the close button within the rules section */
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0 10px;
+    background: #0e202b;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #0e202b 50%, white 50%);
+    transition: background-position 1s;
+    font-size: 2rem;
+    color: #abdfff;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+}
+
+.close-btn:hover {
+    box-shadow: 0px 0px 15px 10px #f50e0b;
+
+    color: #0e202b;
+    background-position: -100% 0;
+}
+
+/*style for the rules page*/
+
+#rules {
+    text-align: center;
+    font-size: 150%;
+    margin: 0 20px;
+    padding: 10px;
+    color: #abdfff;
+}
+
+li {
+    text-align: left;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+
+/* adding style to show user the correct and wrong answers */
 
 .correct-answer {
     box-shadow: 0px 0px 15px 5px #76ffae;
@@ -87,6 +169,10 @@ h2 {
 
 .wrong-answer {
     box-shadow: 0px 0px 15px 5px #f50e0b;
+}
+
+.no-pointer {
+    pointer-events: none;
 }
 
 footer {
