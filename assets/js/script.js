@@ -14,6 +14,7 @@ let timeLeft;
 let timerInterval;
 let score;
 let currentQuestionIndex;
+let questionImage;
 let shuffledQuestions;
 /* wait for the DOM to succesfully load before executing the first function
 which will deliver the menu buttons to the user and add event liseners to these buttons*/
@@ -151,14 +152,15 @@ function nextQuestion() {
 }
 
 function displayTriviaContent(question) {
-    if (question.imgUrl.length >= 1) {
-        document.getElementById("question-image").classList.remove("img-hide");
-    }
 
+    if (question.imgUrl != null) {
+        document.getElementById("question-image").classList.remove("img-hide");
+    } else {
+        document.getElementById("question-image").classList.add("img-hide");
+    }
     //displays the question container
     const questionContainer = document.getElementById("question");
 
-    // insert question content
     questionContainer.innerText = question.question;
 
     // a button is created for each answer associated with the question.
@@ -179,7 +181,6 @@ function displayTriviaContent(question) {
 
     displayQuestionNumber();
 }
-
 function displayQuestionNumber() {
     const questionNumber = document.getElementById("trivia-number");
     questionNumber.innerText = currentQuestionIndex + 1;

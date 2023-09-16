@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: star wars, sans-serif;
+    font-family: 'star wars', sans-serif;
     text-align: center;
     background-image: url("../images/millenium-falcon-image.webp");
     background-position: center;
