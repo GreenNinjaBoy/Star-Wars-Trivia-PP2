@@ -2,6 +2,11 @@
    with ideas when implementing the questions for the trivia:
    https://www.youtube.com/watch?v=riDzcEQbX6k*/
 
+const imageQuestion1 = document.getElementById("question-image");
+
+
+
+
 // Creating an object containing the Padawan (easy) questions.
 
 const padawanQuestions = [
@@ -95,4 +100,36 @@ const padawanQuestions = [
             { text: "4", correct: false },
         ]
     },
+];
+
+const jediKnightQuestions = [
+    imageQuestion1.classList.remove("img-hide"), {
+
+        question: "what is this characters name?",
+        answer: [
+            { text: "Master Yoda", correct: false },
+            { text: "Qui-Gon Jinn", correct: true },
+            { text: "Mace Windu", correct: false },
+            { text: "Luke Skywalker", correct: false },
+        ]
+
+    },
+    {
+        question: "3",
+        answers: [
+            { text: "3", correct: false },
+            { text: "3", correct: false },
+            { text: "3", correct: true },
+            { text: "3", correct: false },
+        ]
+    },
+    {
+        question: "4",
+        answers: [
+            { text: "4", correct: true },
+            { text: "4", correct: false },
+            { text: "4", correct: false },
+            { text: "4", correct: false },
+        ]
+    }
 ];

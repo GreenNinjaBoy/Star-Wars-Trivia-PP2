@@ -75,11 +75,6 @@ p {
     margin: 20px 0;
 }
 
-/*to ensure right function is displayed when running*/
-.hide {
-    display: none;
-}
-
 .btn {
     color: #abdfff;
     text-shadow: 0px 5px 20px #abdfff;
@@ -94,8 +89,11 @@ p {
     border-style: solid;
     border: none;
     border-radius: 20px;
+}
 
-    /*box-shadow: 0px 0px 15px 5px #0e202b;*/
+/*to ensure right function is displayed when running*/
+.hide {
+    display: none;
 }
 
 .menu-btn {
@@ -186,4 +184,14 @@ li {
 footer {
     margin-top: auto;
     color: white;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.img-hide {
+    display: none
 }

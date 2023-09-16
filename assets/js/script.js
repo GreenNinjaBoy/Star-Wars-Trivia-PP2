@@ -112,6 +112,8 @@ function closeTrivia() {
     triviaHeading.classList.remove("hide");
     triviaMenu.classList.remove("hide");
     currentQuestionIndex = 0;
+    clearInterval(timerInterval);
+    resetScore();
 }
 
 function startPadawanTrivia() {
@@ -123,6 +125,9 @@ function startPadawanTrivia() {
 
 function startJediKnightTrivia() {
     triviaArea.classList.remove("hide");
+    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    currentQuestionIndex = 0;
+    nextQuestion();
 
 }
 
@@ -284,8 +289,36 @@ function resetQuizContent() {
 function finalResult() {
     const triviaComplete = document.getElementById("trivia-complete");
     const finalScore = document.getElementById("final-score");
-    mainAnswerArea.classList.remove("hide");
+    triviaArea.classList.add("hide");
     triviaHeading.classList.remove("hide");
     triviaComplete.classList.remove("hide");
     finalScore.innerText = score; // will display final result for the user
+
+
+    /* Generates the buttons with the class "trivia-complete-btn" and
+    adds event listener to then */
+
+    const endOfTriviaButtons = document.querySelectorAll(".trivia-complete-button");
+    endOfTriviaButtons.forEach((endOfTriviaButton) => {
+        endOfTriviaButton.addEventListener("click", function () {
+            resetScore();
+            triviaComplete.classList.add("hide");
+            if (this.getAttribute("id") === "retry-button") {
+                triviaDifficultyPromt();
+            } else if (this.getAttribute("id") === "main-menu-button") {
+                triviaMenu.classList.remove("hide");
+            }
+        });
+    });
+}
+
+
+/**
+ * Will reset the score for the user when a new quiz 
+ * is started.
+ */
+
+function resetScore() {
+    score = document.getElementById("user-score");
+    score.innerText = 0;
 }
