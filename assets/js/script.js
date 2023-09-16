@@ -322,3 +322,5 @@ function resetScore() {
     score = document.getElementById("user-score");
     score.innerText = 0;
 }
+
+//
