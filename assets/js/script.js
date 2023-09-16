@@ -6,6 +6,7 @@ const triviaArea = document.getElementById("trivia-area");
 const mainAnswerArea = document.getElementById("main-answer-area");
 const nextButton = document.getElementById("next-button");
 const timeDisplay = document.getElementById("timer");
+
 // variable yet to be defined
 
 let correctAnswer;
@@ -150,6 +151,10 @@ function nextQuestion() {
 }
 
 function displayTriviaContent(question) {
+    if (question.imgUrl.length >= 1) {
+        document.getElementById("question-image").classList.remove("img-hide");
+    }
+
     //displays the question container
     const questionContainer = document.getElementById("question");
 

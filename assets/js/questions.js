@@ -103,16 +103,15 @@ const padawanQuestions = [
 ];
 
 const jediKnightQuestions = [
-    imageQuestion1.classList.remove("img-hide"), {
-
+    {
+        imgUrl: "assets/images/qui-gon-jinn.webp",
         question: "what is this characters name?",
-        answer: [
+        answers: [
             { text: "Master Yoda", correct: false },
             { text: "Qui-Gon Jinn", correct: true },
             { text: "Mace Windu", correct: false },
             { text: "Luke Skywalker", correct: false },
         ]
-
     },
     {
         question: "3",
