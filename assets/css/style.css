@@ -149,6 +149,14 @@ p {
     background-position: -100% 0;
 }
 
+.medium:hover {
+    box-shadow: 0px 0px 15px 10px #76ffae;
+}
+
+.hard:hover {
+    box-shadow: 0px 0px 15px 10px #e078fe;
+}
+
 /*style for the rules page*/
 
 #rules {
