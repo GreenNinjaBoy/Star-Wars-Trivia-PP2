@@ -18,14 +18,16 @@ body {
     align-items: center;
     font-family: 'star jedi v2', sans-serif;
     text-align: center;
-    background-image: url("../images/millenium-falcon-image.webp");
+    background-image: url("../images/star-wars-space-background.webp");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5px;
 }
 
 /* styles for heading texts */
 h1 {
-    color: #fff;
+    color: #FFE81F;
     font-size: 500%;
     margin-top: 80px;
     padding-top: 20px;
@@ -33,9 +35,14 @@ h1 {
 }
 
 h2 {
+    color: aliceblue;
     margin-top: 5px;
     padding: 5px;
-    font-size: 90%;
+    font-size: 150%;
+}
+
+#question {
+    color: aliceblue;
 }
 
 /*style for quix timer*/
@@ -58,7 +65,8 @@ p {
     width: 800px;
     max-width: 80%;
     margin: 200px 5px;
-    background-color: #0e202b;
+    opacity: 1;
+    background: rgba(255, 0, 0, opacity);
     border: 1px;
     border-radius: 10px;
     padding: 10px;
@@ -69,6 +77,8 @@ p {
 
 /*style for the answer buttons*/
 .btn-grid {
+    background: rgba(255, 0, 0, 0);
+    opacity: 0.5;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
@@ -79,13 +89,14 @@ p {
     color: #abdfff;
     text-shadow: 0px 5px 20px #abdfff;
     font-weight: 600;
-    background: #0e202b;
+    background: rgba(255, 0, 0, 0);
+    opacity: 0.5;
     display: inline-block;
     padding: 10px;
     width: 80%;
     min-width: 180px;
     margin: 20px auto;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     border-style: solid;
     border: none;
     border-radius: 20px;
@@ -100,16 +111,16 @@ p {
     color: #abdfff;
     text-shadow: 0px 5px 20px #abdfff;
     font-weight: 600;
-    background: #0e202b;
+    background: #010101;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, #0e202b 50%, white 50%);
+    background-image: linear-gradient(to right, #010101 50%, white 50%);
     transition: background-position 1s;
     display: inline-block;
     padding: 10px;
     width: 80%;
     min-width: 180px;
     margin: 20px auto;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     border: none;
     border-radius: 20px;
     /*box-shadow: 0px 0px 15px 5px #0e202b;*/
@@ -125,7 +136,6 @@ p {
 }
 
 /*style for the close button within the rules section */
-
 .close-btn {
     position: absolute;
     top: 10px;
@@ -197,6 +207,7 @@ footer {
 }
 
 .img {
+    margin-top: 20px;
     width: 150px;
     height: 150px;
     position: relative;

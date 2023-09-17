@@ -105,7 +105,7 @@ const padawanQuestions = [
 const jediKnightQuestions = [
     {
         imgUrl: "assets/images/qui-gon-jinn.webp",
-        question: "what is this characters name?",
+        question: "Name the Character",
         answers: [
             { text: "Master Yoda", correct: false },
             { text: "Qui-Gon Jinn", correct: true },
