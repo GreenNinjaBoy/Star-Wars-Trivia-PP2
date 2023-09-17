@@ -14,7 +14,6 @@ let timeLeft;
 let timerInterval;
 let score;
 let currentQuestionIndex;
-let questionImage;
 let shuffledQuestions;
 /* wait for the DOM to succesfully load before executing the first function
 which will deliver the menu buttons to the user and add event liseners to these buttons*/
@@ -141,7 +140,7 @@ function startJediMasterTrivia() {
 
 function nextQuestion() {
     clearInterval(timerInterval); // this will stop the timer form counting
-    if (currentQuestionIndex < 5) {
+    if (currentQuestionIndex < 7) {
         resetQuizContent();
         displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
         currentQuestionIndex++;

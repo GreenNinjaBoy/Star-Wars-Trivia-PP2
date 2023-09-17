@@ -2,10 +2,6 @@
    with ideas when implementing the questions for the trivia:
    https://www.youtube.com/watch?v=riDzcEQbX6k*/
 
-const imageQuestion1 = document.getElementById("question-image");
-
-
-
 
 // Creating an object containing the Padawan (easy) questions.
 
@@ -65,45 +61,6 @@ const padawanQuestions = [
         ]
     },
     {
-        question: "1?",
-        answers: [
-            { text: "1", correct: true },
-            { text: "1", correct: false },
-            { text: "1", correct: false },
-            { text: "1", correct: false },
-        ]
-    },
-    {
-        question: "2",
-        answers: [
-            { text: "2", correct: false },
-            { text: "2", correct: false },
-            { text: "2", correct: false },
-            { text: "2", correct: true },
-        ]
-    },
-    {
-        question: "3",
-        answers: [
-            { text: "3", correct: false },
-            { text: "3", correct: false },
-            { text: "3", correct: true },
-            { text: "3", correct: false },
-        ]
-    },
-    {
-        question: "4",
-        answers: [
-            { text: "4", correct: true },
-            { text: "4", correct: false },
-            { text: "4", correct: false },
-            { text: "4", correct: false },
-        ]
-    },
-];
-
-const jediKnightQuestions = [
-    {
         imgUrl: "assets/images/qui-gon-jinn.webp",
         question: "Name the Character",
         answers: [
@@ -113,6 +70,34 @@ const jediKnightQuestions = [
             { text: "Luke Skywalker", correct: false },
         ]
     },
+    {
+        question: "Where does Luke and Han rescue Leia in 'A New Hope'?",
+        answers: [
+            { text: "The Death Star", correct: true },
+            { text: "Alderaan", correct: false },
+            { text: "Tatooine", correct: false },
+            { text: "Her crippled starship", correct: false },
+        ]
+    },
+    {
+        question: "In the movie 'The Phantom Menace', is Jar Jar binks a Gungan?",
+        answers: [
+            { text: "Yes", correct: true },
+            { text: "no", correct: false },
+        ]
+    },
+    {
+        question: "What is Chewbacca's race?",
+        answers: [
+            { text: "Wookiee", correct: true },
+            { text: "Bespinite", correct: false },
+            { text: "Ewok", correct: false },
+            { text: "Gunganite", correct: false },
+        ]
+    },
+];
+
+const jediKnightQuestions = [
     {
         question: "3",
         answers: [
