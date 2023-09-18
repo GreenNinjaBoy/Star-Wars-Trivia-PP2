@@ -2,7 +2,6 @@
    with ideas when implementing the questions for the trivia:
    https://www.youtube.com/watch?v=riDzcEQbX6k*/
 
-
 // Creating an object containing the Padawan (easy) questions.
 
 const padawanQuestions = [
@@ -59,17 +58,7 @@ const padawanQuestions = [
             { text: "Anikin Skywalker", correct: true },
             { text: "Jabba the Hutt", correct: false },
         ]
-    },
-    {
-        imgUrl: "assets/images/qui-gon-jinn.webp",
-        question: "Name the Character",
-        answers: [
-            { text: "Master Yoda", correct: false },
-            { text: "Qui-Gon Jinn", correct: true },
-            { text: "Mace Windu", correct: false },
-            { text: "Luke Skywalker", correct: false },
-        ]
-    },
+    },   
     {
         question: "Where does Luke and Han rescue Leia in 'A New Hope'?",
         answers: [
@@ -95,6 +84,26 @@ const padawanQuestions = [
             { text: "Gunganite", correct: false },
         ]
     },
+    {
+        imgUrl: "assets/images/qui-gon-jinn.webp",
+        question: "Name the Character",
+        answers: [
+            { text: "Master Yoda", correct: false },
+            { text: "Qui-Gon Jinn", correct: true },
+            { text: "Mace Windu", correct: false },
+            { text: "Luke Skywalker", correct: false },
+        ]
+},
+{
+    imgUrl: "assets/images/yoda-attack-of-the-clones.jpg",
+    question: "Name the Character",
+    answers: [
+        { text: "Master Yoda", correct: true },
+        { text: "Qui-Gon Jinn", correct: false },
+        { text: "Mace Windu", correct: false },
+        { text: "Luke Skywalker", correct: false },
+    ]
+}
 ];
 
 const jediKnightQuestions = [
@@ -115,5 +124,6 @@ const jediKnightQuestions = [
             { text: "4", correct: false },
             { text: "4", correct: false },
         ]
-    }
+    },
+       
 ];
