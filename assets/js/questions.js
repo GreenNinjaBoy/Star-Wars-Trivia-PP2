@@ -103,6 +103,15 @@ const padawanQuestions = [
         { text: "Mace Windu", correct: false },
         { text: "Luke Skywalker", correct: false },
     ]
+},
+{
+    question: "What color was Luke Skywalkers first Lishtsaber?",
+    answers:[
+        {text: "Green", correct: false},
+        {text: "Purple", correct:false},
+        {text: "Blue", correct: true},
+        {text: "Yellow", correct: false},
+    ]
 }
 ];
 

@@ -141,7 +141,7 @@ function startJediMasterTrivia() {
 
 function nextQuestion() {
     clearInterval(timerInterval); // this will stop the timer form counting
-    if (currentQuestionIndex < 7) {
+    if (currentQuestionIndex < 10) {
         resetQuizContent();
         displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
         currentQuestionIndex++;

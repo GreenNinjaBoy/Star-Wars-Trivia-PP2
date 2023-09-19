@@ -119,8 +119,8 @@ p {
     font-weight: 600;
     background: #010101;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, #010101 50%, white 50%);
-    transition: background-position 1s;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px 10px transparent;
     display: inline-block;
     padding: 10px;
     width: 80%;
@@ -133,10 +133,11 @@ p {
 }
 
 .menu-btn:hover {
-    box-shadow: 0px 0px 15px 10px #6fbafc;
-
+    animation: buttonHover 0.5s ease-in-out; /* Apply the keyframes animation on hover */
+    box-shadow: 15px 0px 15px 10px #6fbafc; /* Change the box-shadow on hover */
+    background-color: white;
     color: #0e202b;
-    background-position: -100% 0;
+    
 
 
 }
@@ -248,5 +249,16 @@ footer {
             0 0 55px #FFE81F,
             0 0 70px #FFE81F,
             0 0 80px #FFE81F;
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        box-shadow: -15px 0px 15px 10px; /* Start with shadow on the left and blue background */
+        background-color: #010101;
+    }
+    100% {
+        box-shadow: 15px 0px 15px 10px #6fbafc; /* End with shadow on the right and white background */
+        background-color: white;
     }
 }
