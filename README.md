@@ -1,3 +1,5 @@
+
+
 # Star Wars Trivia
 The Star Wars Trivia is a site designed for users who have a love for the world of Star Wars and would like to put their knowledge to the test.
 
@@ -47,3 +49,19 @@ note to self: Insert device imagery here when ready!!
 	 - Code
 
  - Acknowledgements
+
+## User Experience
+
+**User Stories**
+
+As a user I want:
+
+ - Test My StarWars knowledge with trivia.
+ - Be able to initiate the start of the trivia.
+ - Be able to understand how the trivia works.
+ - Be able to select a difficulty before I start the trivia.
+ - To know what my score is as I progress through the trivia.
+ - To know what question I am on during the trivia.
+ - To know if my answer is correct or incorrect.
+ - To Know my final score
+ - To be able to take the quiz again after completion. 
