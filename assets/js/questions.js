@@ -24,21 +24,21 @@ const padawanQuestions = [
         ]
     },
     {
-        question: "who did Qui-Gon meet on Tatoween?",
+        question: "who did Qui-Gon meet on Tatooine?",
         answers: [
             { text: "Luke Skywalker", correct: false },
             { text: "Bobba Feat", correct: false },
-            { text: "Anikin Skywalker", correct: true },
+            { text: "Anakin Skywalker", correct: true },
             { text: "Jabba the Hutt", correct: false },
         ]
     },
     {
-        question: "What planet did Luke Skywalker grow up on?",
+        question: "What planet does Luke Skywalker call home?",
         answers: [
-            { text: "Tatoween", correct: true },
+            { text: "Tatooine", correct: true },
             { text: "Corasant", correct: false },
             { text: "Naboo", correct: false },
-            { text: "Geo-nosis", correct: false },
+            { text: "Endor", correct: false },
         ]
     },
     {
@@ -49,16 +49,7 @@ const padawanQuestions = [
             { text: "Mace Windu", correct: false },
             { text: "Qui-gon Gin", correct: true },
         ]
-    },
-    {
-        question: "who did Qui-Gon meet on Tatoween?",
-        answers: [
-            { text: "Luke Skywalker", correct: false },
-            { text: "Bobba Feat", correct: false },
-            { text: "Anikin Skywalker", correct: true },
-            { text: "Jabba the Hutt", correct: false },
-        ]
-    },   
+    },  
     {
         question: "Where does Luke and Han rescue Leia in 'A New Hope'?",
         answers: [
@@ -111,6 +102,51 @@ const padawanQuestions = [
         {text: "Purple", correct:false},
         {text: "Blue", correct: true},
         {text: "Yellow", correct: false},
+    ]
+},
+{
+    question: "Who is the main protagonist in Star Wars Episode I: The Phantom Menace?",
+    answers:[
+        {text: "Luke Skywalker", correct:false},
+        {text: "Obi-Wan Kenobi", correct: false},
+        {text: "Anakin SkyWalker", correct: false},
+        {text: "Darth Maul", correct: true},
+    ]
+},
+{
+    question: "What is the name of Anakin Skywalkers mother?",
+    answers: [
+        {text: "Padme Amidala", correct: false},
+        {text: "Shmi Skywalker", correct: true},
+        {text: "Leia Orgama", correct: false},
+        {text: "Rey", correct: false},
+    ]
+},
+{
+    question: "Who is the sith lord who wields a double-bladed lightsaber?",
+    answers: [
+        {text: "Count Dooku", correct: false},
+        {text: "Darth Sidious", correct: false},
+        {text: "Darth Maul", correct: true},
+        {text: "Darth Vader", Correct: false},
+    ]
+},
+{
+    question: "What is the name of Han Solo's ship?",
+    answers: [
+        {text: "Millennium Falcon", correct: true},
+        {text: "TIE Fighter", correct: false},
+        {text: "X-wing", correct: false},
+        {text: "Slaver 1", correct: false},
+    ]
+},
+{
+    question: "Who is Darth Vader's son in the original Trilogy?",
+    answers: [
+        {text: "Luke Skywalker", correct: true},
+        {text: "Anakin Skywalker", correct: false},
+        {text: "Obi-Wan Kenobi", correct: false},
+        {text: "Han Solo", correct: false},
     ]
 }
 ];

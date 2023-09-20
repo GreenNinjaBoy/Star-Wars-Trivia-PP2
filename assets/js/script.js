@@ -7,7 +7,6 @@ const mainAnswerArea = document.getElementById("main-answer-area");
 const nextButton = document.getElementById("next-button");
 const timeDisplay = document.getElementById("timer");
 const questionImage = document.getElementById("question-image");
-
 // variable yet to be defined
 
 let correctAnswer;
@@ -120,14 +119,14 @@ function closeTrivia() {
 
 function startPadawanTrivia() {
     triviaArea.classList.remove("hide");
-    shuffledQuestions = padawanQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    shuffledQuestions = padawanQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
     currentQuestionIndex = 0;
     nextQuestion();
 }
 
 function startJediKnightTrivia() {
     triviaArea.classList.remove("hide");
-    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
     currentQuestionIndex = 0;
     nextQuestion();
 
@@ -135,13 +134,16 @@ function startJediKnightTrivia() {
 
 function startJediMasterTrivia() {
     triviaArea.classList.remove("hide");
+    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
+    currentQuestionIndex = 0;
+    nextQuestion();
 }
 
 
 
 function nextQuestion() {
     clearInterval(timerInterval); // this will stop the timer form counting
-    if (currentQuestionIndex < 10) {
+    if (currentQuestionIndex < 15) {
         resetQuizContent();
         displayTriviaContent(shuffledQuestions[currentQuestionIndex]);
         currentQuestionIndex++;
