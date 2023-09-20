@@ -252,6 +252,8 @@ footer {
     .container {
         min-width: auto;
         margin: 20px auto;
+        overflow-y: scroll;
+        max-height: 70vh;
     }
 
     #timer {
