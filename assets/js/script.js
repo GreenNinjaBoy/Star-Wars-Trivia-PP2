@@ -167,6 +167,9 @@ function displayTriviaContent(question) {
 
     questionContainer.innerText = question.question;
 
+    // Shuffles the answer array
+    shuffleArray(question.answers);
+
     // a button is created for each answer associated with the question.
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -182,6 +185,14 @@ function displayTriviaContent(question) {
         button.addEventListener("click", checkAnswer);
         mainAnswerArea.appendChild(button);
     });
+
+    // Function to shuffle an array randomly
+    function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
     displayQuestionNumber();
 }
