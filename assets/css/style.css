@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Dela+Gothic+One&family=League+Gothic&display=swap');
 /* link to CDN fonts which had the star wars themed font*/
 @import url('https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi+V2');
-/* general styles */
+* General styles */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -26,7 +25,7 @@ body {
     padding: 5px;
 }
 
-/* styles for heading texts */
+/* Styles for heading texts */
 h1 {
     color: #FFE81F;
     font-size: 500%;
@@ -40,6 +39,7 @@ h2 {
     margin-top: 5px;
     padding: 5px;
     font-size: 150%;
+    font-family: 'Leauge Gothic', sans-serif;
 }
 
 #question-area {
@@ -47,23 +47,24 @@ h2 {
     text-shadow: 0px 5px 20px #FFE81F;
 }
 
-/*style for quix timer*/
+/* Style for quiz timer */
 
 #timer {
     text-shadow: 0px 5px 20px #FFE81F;
-    margin-left: 20px
+    margin-left: 20px;
 }
 
-/* style for paragraph texts */
+/* Style for paragraph texts */
 
 p {
     text-shadow: 0px 5px 20px #FFE81F;
+    font-family: 'Leauge Gothic', sans-serif;
     font-size: 1.4rem;
     padding-top: 15px;
-    color: inherit;
+    color: white;
 }
 
-/*style for game container card*/
+/* Style for game container card */
 .game-container {
     position: relative;
     width: 800px;
@@ -82,10 +83,9 @@ p {
         0 0 0.8rem #FFE81F,
         0 0 2.8rem #FFE81F,
         inset 0 0 1.3rem #FFE81F;
-
 }
 
-/*style for the answer buttons*/
+/* Style for the answer buttons */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -109,7 +109,7 @@ p {
     border-radius: 20px;
 }
 
-/*to ensure right function is displayed when running*/
+/* To ensure the correct function is displayed when running */
 .hide {
     display: none;
 }
@@ -130,19 +130,15 @@ p {
     font-size: 2.5rem;
     border: none;
     border-radius: 20px;
-    /*box-shadow: 0px 0px 15px 5px #0e202b;*/
 }
 
 .menu-btn:hover {
     box-shadow: 0px 0px 15px 10px #6fbafc;
-
     color: #0e202b;
     background-position: -100% 0;
-
-
 }
 
-/*style for the close button within the rules section */
+/* Style for the close button within the rules section */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -161,7 +157,6 @@ p {
 
 .close-btn:hover {
     box-shadow: 0px 0px 15px 10px #f50e0b;
-
     color: #010101;
     background-position: -100% 0;
 }
@@ -174,8 +169,7 @@ p {
     box-shadow: 0px 0px 15px 10px #e078fe;
 }
 
-/*style for the rules page*/
-
+/* Style for the rules page */
 #rules {
     text-align: center;
     font-size: 150%;
@@ -191,13 +185,10 @@ li {
     padding: 10px;
 }
 
-
-/* adding style to show user the correct and wrong answers */
-
+/* Adding style to show the user the correct and wrong answers */
 .correct-answer {
     text-shadow: 0px 5px 20px #76ffae;
     color: #76ffae;
-
 }
 
 .wrong-answer {
@@ -222,11 +213,10 @@ footer {
 }
 
 .img-hide {
-    display: none
+    display: none;
 }
 
 @keyframes pulsate {
-
     100% {
         text-shadow:
             0 0 4px #fff,
@@ -251,3 +241,55 @@ footer {
             0 0 80px #FFE81F;
     }
 }
+
+/* Media query for screens with a max width of 767px */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+
+    .container {
+        min-width: auto;
+        margin: 20px auto;
+    }
+
+    #timer {
+        margin-left: 40px;
+    }
+
+    /* Style for the answer buttons in a single row */
+    .btn-grid {
+        grid-template-columns: repeat(1, auto); /* Change to a single column */
+        gap: 10px;
+        margin-top: 10px; /
+    }
+}
+/* Media query for screens with a min width of 768px and max width of 1266px */
+@media screen and (min-width: 768px) and (max-width: 1266px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 80px;
+    }
+
+    .container {
+        min-width: 650px;
+        margin: 40px auto;
+    }
+
+    #timer {
+        margin-left: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
