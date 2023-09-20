@@ -148,7 +148,37 @@ const padawanQuestions = [
         {text: "Obi-Wan Kenobi", correct: false},
         {text: "Han Solo", correct: false},
     ]
-}
+},
+{
+    imgUrl: "assets/images/death-star.webp",
+    question: "Name this battle station",
+    answers: [
+        { text: "The Death Star", correct: true },
+        { text: "Star Killer Base", correct: false },
+        { text: "Star Destroyer", correct: false },
+        { text: "TIE Fighter", correct: false },
+    ]
+},
+{
+    imgUrl: "assets/images/han-solo.webp",
+    question: "Name the Character",
+    answers: [
+        { text: "Han Solo", correct: true },
+        { text: "Ben Solo", correct: false },
+        { text: "Lando Calrissian", correct: false },
+        { text: "Luke Skywalker", correct: false },
+    ]
+},
+{
+    imgUrl: "assets/images/luke-skywalker.webp",
+    question: "Name the Character",
+    answers: [
+        { text: "Han Solo", correct: false },
+        { text: "Ben Solo", correct: false },
+        { text: "Lando Calrissian", correct: false },
+        { text: "Luke Skywalker", correct: true },
+    ]
+},
 ];
 
 const jediKnightQuestions = [
