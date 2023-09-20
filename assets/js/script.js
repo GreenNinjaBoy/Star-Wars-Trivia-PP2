@@ -12,7 +12,7 @@ const questionImage = document.getElementById("question-image");
 let correctAnswer;
 let timeLeft;
 let timerInterval;
-let score;
+let score = 0;
 let currentQuestionIndex;
 let shuffledQuestions;
 /* wait for the DOM to succesfully load before executing the first function
@@ -284,6 +284,25 @@ function incrementScore() {
     document.getElementById("user-score").innerText = ++score;
 }
 
+const movieQuote = document.getElementById("movie-quote");
+
+function displayTextFinalScore(score) {
+    if (score === 15) {
+        return "Well done Master"
+    } else if (score >= 10 && score <= 14) {
+        return "You are on this council but we do not grant you the rank of master";
+    } else if (score <= 9) {
+        return "You have been trained well.... but your not a Jedi yet!";
+    }
+}
+
+incrementScore();
+
+const scoreText = displayTextFinalScore(score);
+
+movieQuote.innerText = scoreText;
+
+// created a function that will reset the quiz content
 function resetQuizContent() {
     nextButton.classList.add("hide"); // will hide the next question button.
     mainAnswerArea.classList.remove("no-pointer"); //allows user to click again in answer area.
@@ -321,6 +340,12 @@ function finalResult() {
         });
     });
 }
+
+
+
+// this function will display a message depending on user score
+
+
 
 
 /**
