@@ -295,13 +295,6 @@ function displayTextFinalScore(score) {
         return "You have been trained well.... but your not a Jedi yet!";
     }
 }
-
-incrementScore();
-
-const scoreText = displayTextFinalScore(score);
-
-movieQuote.innerText = scoreText;
-
 // created a function that will reset the quiz content
 function resetQuizContent() {
     nextButton.classList.add("hide"); // will hide the next question button.
@@ -316,6 +309,8 @@ function resetQuizContent() {
 }
 
 function finalResult() {
+    const scoreText = displayTextFinalScore(score);
+    movieQuote.innerText = scoreText;
     const triviaComplete = document.getElementById("trivia-complete");
     const finalScore = document.getElementById("final-score");
     triviaArea.classList.add("hide");
