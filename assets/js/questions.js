@@ -47,7 +47,7 @@ const padawanQuestions = [
             { text: "Yoda", correct: false },
             { text: "Count Duku", correct: false },
             { text: "Mace Windu", correct: false },
-            { text: "Qui-gon Gin", correct: true },
+            { text: "Qui-gon Jinn", correct: true },
         ]
     },  
     {
@@ -79,7 +79,7 @@ const padawanQuestions = [
         imgUrl: "assets/images/qui-gon-jinn.webp",
         question: "Name the Character",
         answers: [
-            { text: "Master Yoda", correct: false },
+            { text: "Yoda", correct: false },
             { text: "Qui-Gon Jinn", correct: true },
             { text: "Mace Windu", correct: false },
             { text: "Luke Skywalker", correct: false },
@@ -89,7 +89,7 @@ const padawanQuestions = [
     imgUrl: "assets/images/yoda-attack-of-the-clones.jpg",
     question: "Name the Character",
     answers: [
-        { text: "Master Yoda", correct: true },
+        { text: "Yoda", correct: true },
         { text: "Qui-Gon Jinn", correct: false },
         { text: "Mace Windu", correct: false },
         { text: "Luke Skywalker", correct: false },
@@ -183,22 +183,31 @@ const padawanQuestions = [
 
 const jediKnightQuestions = [
     {
-        question: "3",
+        question: "Who is the director of 'Star Wars: EpisodeIV - A New Hope?",
         answers: [
-            { text: "3", correct: false },
-            { text: "3", correct: false },
-            { text: "3", correct: true },
-            { text: "3", correct: false },
+            { text: "Steven Spielberg", correct: false },
+            { text: "J.J Abrams", correct: false },
+            { text: "George Lucas", correct: true },
+            { text: "Irvin Kershner", correct: false },
         ]
     },
     {
-        question: "4",
+        question: " In Episode II which planet serves as the backdrop for the climactic battle at the end of the film?",
         answers: [
-            { text: "4", correct: true },
-            { text: "4", correct: false },
-            { text: "4", correct: false },
-            { text: "4", correct: false },
+            { text: "Geonosis", correct: true },
+            { text: "Endor", correct: false },
+            { text: "Naboo", correct: false },
+            { text: "Kamino", correct: false },
         ]
     },
+    {
+        question: "What is the name of the Wookie co-pilot of the Millennium Falcon?",
+        answers: [
+            {text: "R2-D2", correct: false},
+            {text: "Chewbacca", correct: true},
+            {text: "C-3PO", correct: false},
+            {text: "lando Calrissian", correct: false},
+        ]
+    }
        
 ];
