@@ -27,7 +27,7 @@ const padawanQuestions = [
         question: "who did Qui-Gon meet on Tatooine?",
         answers: [
             { text: "Luke Skywalker", correct: false },
-            { text: "Bobba Feat", correct: false },
+            { text: "Bobba Fett", correct: false },
             { text: "Anakin Skywalker", correct: true },
             { text: "Jabba the Hutt", correct: false },
         ]
@@ -105,7 +105,7 @@ const padawanQuestions = [
         ]
     },
     {
-        question: "Who is the main protagonist in Star Wars Episode I: The Phantom Menace?",
+        question: "Who is the main antagonist in Star Wars Episode I: The Phantom Menace?",
         answers: [
             { text: "Luke Skywalker", correct: false },
             { text: "Obi-Wan Kenobi", correct: false },
@@ -280,6 +280,24 @@ const jediKnightQuestions = [
             { text: "Lightsabers", correct: false },
             { text: "Ion Cannons", correct: false },
             { text: "Laser Cannons", correct: true },
+        ]
+    },
+    {
+        question: "Who disguises themselves as a bounty hunter and rescues Han Solo from Jabba the Hutt?",
+        answers: [
+            { text: "Princess Leia", correct: true },
+            { text: "Lando Calrissian", correct: false },
+            { text: "Chewbacca", correct: false },
+            { text: "Boba Fett", corect: false }
+        ]
+    },
+    {
+        question: "Name of the desert planet where Rey is initially introduced",
+        answers: [
+            { text: "Tatooine", correct: false },
+            { text: "Jakku", correct: true },
+            { text: "Naboo", correct: false },
+            { text: "Hoth", correct: false },
         ]
     }
 ];
