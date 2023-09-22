@@ -49,7 +49,7 @@ const padawanQuestions = [
             { text: "Mace Windu", correct: false },
             { text: "Qui-gon Jinn", correct: true },
         ]
-    },  
+    },
     {
         question: "Where does Luke and Han rescue Leia in 'A New Hope'?",
         answers: [
@@ -84,101 +84,101 @@ const padawanQuestions = [
             { text: "Mace Windu", correct: false },
             { text: "Luke Skywalker", correct: false },
         ]
-},
-{
-    imgUrl: "assets/images/yoda-attack-of-the-clones.jpg",
-    question: "Name the Character",
-    answers: [
-        { text: "Yoda", correct: true },
-        { text: "Qui-Gon Jinn", correct: false },
-        { text: "Mace Windu", correct: false },
-        { text: "Luke Skywalker", correct: false },
-    ]
-},
-{
-    question: "What color was Luke Skywalkers first Lishtsaber?",
-    answers:[
-        {text: "Green", correct: false},
-        {text: "Purple", correct:false},
-        {text: "Blue", correct: true},
-        {text: "Yellow", correct: false},
-    ]
-},
-{
-    question: "Who is the main protagonist in Star Wars Episode I: The Phantom Menace?",
-    answers:[
-        {text: "Luke Skywalker", correct:false},
-        {text: "Obi-Wan Kenobi", correct: false},
-        {text: "Anakin SkyWalker", correct: false},
-        {text: "Darth Maul", correct: true},
-    ]
-},
-{
-    question: "What is the name of Anakin Skywalkers mother?",
-    answers: [
-        {text: "Padme Amidala", correct: false},
-        {text: "Shmi Skywalker", correct: true},
-        {text: "Leia Orgama", correct: false},
-        {text: "Rey", correct: false},
-    ]
-},
-{
-    question: "Who is the sith lord who wields a double-bladed lightsaber?",
-    answers: [
-        {text: "Count Dooku", correct: false},
-        {text: "Darth Sidious", correct: false},
-        {text: "Darth Maul", correct: true},
-        {text: "Darth Vader", Correct: false},
-    ]
-},
-{
-    question: "What is the name of Han Solo's ship?",
-    answers: [
-        {text: "Millennium Falcon", correct: true},
-        {text: "TIE Fighter", correct: false},
-        {text: "X-wing", correct: false},
-        {text: "Slaver 1", correct: false},
-    ]
-},
-{
-    question: "Who is Darth Vader's son in the original Trilogy?",
-    answers: [
-        {text: "Luke Skywalker", correct: true},
-        {text: "Anakin Skywalker", correct: false},
-        {text: "Obi-Wan Kenobi", correct: false},
-        {text: "Han Solo", correct: false},
-    ]
-},
-{
-    imgUrl: "assets/images/death-star.webp",
-    question: "Name this battle station",
-    answers: [
-        { text: "The Death Star", correct: true },
-        { text: "Star Killer Base", correct: false },
-        { text: "Star Destroyer", correct: false },
-        { text: "TIE Fighter", correct: false },
-    ]
-},
-{
-    imgUrl: "assets/images/han-solo.webp",
-    question: "Name the Character",
-    answers: [
-        { text: "Han Solo", correct: true },
-        { text: "Ben Solo", correct: false },
-        { text: "Lando Calrissian", correct: false },
-        { text: "Luke Skywalker", correct: false },
-    ]
-},
-{
-    imgUrl: "assets/images/luke-skywalker.webp",
-    question: "Name the Character",
-    answers: [
-        { text: "Han Solo", correct: false },
-        { text: "Ben Solo", correct: false },
-        { text: "Lando Calrissian", correct: false },
-        { text: "Luke Skywalker", correct: true },
-    ]
-},
+    },
+    {
+        imgUrl: "assets/images/yoda-attack-of-the-clones.jpg",
+        question: "Name the Character",
+        answers: [
+            { text: "Yoda", correct: true },
+            { text: "Qui-Gon Jinn", correct: false },
+            { text: "Mace Windu", correct: false },
+            { text: "Luke Skywalker", correct: false },
+        ]
+    },
+    {
+        question: "What color was Luke Skywalkers first Lishtsaber?",
+        answers: [
+            { text: "Green", correct: false },
+            { text: "Purple", correct: false },
+            { text: "Blue", correct: true },
+            { text: "Yellow", correct: false },
+        ]
+    },
+    {
+        question: "Who is the main protagonist in Star Wars Episode I: The Phantom Menace?",
+        answers: [
+            { text: "Luke Skywalker", correct: false },
+            { text: "Obi-Wan Kenobi", correct: false },
+            { text: "Anakin SkyWalker", correct: false },
+            { text: "Darth Maul", correct: true },
+        ]
+    },
+    {
+        question: "What is the name of Anakin Skywalkers mother?",
+        answers: [
+            { text: "Padme Amidala", correct: false },
+            { text: "Shmi Skywalker", correct: true },
+            { text: "Leia Orgama", correct: false },
+            { text: "Rey", correct: false },
+        ]
+    },
+    {
+        question: "Who is the sith lord who wields a double-bladed lightsaber?",
+        answers: [
+            { text: "Count Dooku", correct: false },
+            { text: "Darth Sidious", correct: false },
+            { text: "Darth Maul", correct: true },
+            { text: "Darth Vader", Correct: false },
+        ]
+    },
+    {
+        question: "What is the name of Han Solo's ship?",
+        answers: [
+            { text: "Millennium Falcon", correct: true },
+            { text: "TIE Fighter", correct: false },
+            { text: "X-wing", correct: false },
+            { text: "Slaver 1", correct: false },
+        ]
+    },
+    {
+        question: "Who is Darth Vader's son in the original Trilogy?",
+        answers: [
+            { text: "Luke Skywalker", correct: true },
+            { text: "Anakin Skywalker", correct: false },
+            { text: "Obi-Wan Kenobi", correct: false },
+            { text: "Han Solo", correct: false },
+        ]
+    },
+    {
+        imgUrl: "assets/images/death-star.webp",
+        question: "Name this battle station",
+        answers: [
+            { text: "The Death Star", correct: true },
+            { text: "Star Killer Base", correct: false },
+            { text: "Star Destroyer", correct: false },
+            { text: "TIE Fighter", correct: false },
+        ]
+    },
+    {
+        imgUrl: "assets/images/han-solo.webp",
+        question: "Name the Character",
+        answers: [
+            { text: "Han Solo", correct: true },
+            { text: "Ben Solo", correct: false },
+            { text: "Lando Calrissian", correct: false },
+            { text: "Luke Skywalker", correct: false },
+        ]
+    },
+    {
+        imgUrl: "assets/images/luke-skywalker.webp",
+        question: "Name the Character",
+        answers: [
+            { text: "Han Solo", correct: false },
+            { text: "Ben Solo", correct: false },
+            { text: "Lando Calrissian", correct: false },
+            { text: "Luke Skywalker", correct: true },
+        ]
+    },
 ];
 
 const jediKnightQuestions = [
@@ -203,11 +203,21 @@ const jediKnightQuestions = [
     {
         question: "What is the name of the Wookie co-pilot of the Millennium Falcon?",
         answers: [
-            {text: "R2-D2", correct: false},
-            {text: "Chewbacca", correct: true},
-            {text: "C-3PO", correct: false},
-            {text: "lando Calrissian", correct: false},
+            { text: "R2-D2", correct: false },
+            { text: "Chewbacca", correct: true },
+            { text: "C-3PO", correct: false },
+            { text: "lando Calrissian", correct: false },
+        ]
+    },
+    {
+        question: "Who is the Sith apprentice of Emperor Palpatine in 'Star Wars: Episode III - Revenge of the Sith'?",
+        answers: [
+            { text: "Darth Vader", correct: false },
+            { text: "Darth Sidious", correct: false },
+            { text: "Darth Maul", correct: false },
+            { text: "Darth Tyranus", correct: true },
+
         ]
     }
-       
+
 ];
