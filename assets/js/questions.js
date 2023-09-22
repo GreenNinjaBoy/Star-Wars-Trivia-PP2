@@ -218,6 +218,68 @@ const jediKnightQuestions = [
             { text: "Darth Tyranus", correct: true },
 
         ]
+    },
+    {
+        question: "Which iconic starship makes its first appearance in 'Star Wars: Episode IV - A New Hope'",
+        answers: [
+            { text: "TIE Fighter", correct: false },
+            { text: "X-wing Starfighter", correct: false },
+            { text: "Slave I", correct: false },
+            { text: "Millennium Falcon", correct: true },
+        ]
+    },
+    {
+        question: "In 'Star Wars: Episode VIII - The Last Jedi,' who is the Supreme Leader of the First Order?",
+        answers: [
+            { text: "Kylo Ren", correct: false },
+            { text: "Captain Phasma", correct: false },
+            { text: "General Hux", correct: false },
+            { text: "Snoke", correct: true },
+        ]
+    },
+    {
+        question: "What is the name of Anakin Skywalker's podracing rival?",
+        answers: [
+            { text: "Sebulba", correct: true },
+            { text: "Watto", correct: false },
+            { text: "Kit Fisto", correct: false },
+            { text: "Plo Koon", correct: false },
+        ]
+    },
+    {
+        question: "In 'Star Wars: Episode VII - The Force Awakens,' who is the son of Han Solo and Princess Leia?",
+        answers: [
+            { text: "Finn", correct: false },
+            { text: "Kylo Ren", correct: true },
+            { text: "Poe Dameron", correct: false },
+            { text: "BB-8", correct: false },
+        ]
+    },
+    {
+        question: "Name the planet where the final battle between the Resistance and the First Order takes place in Episode IX.",
+        answers: [
+            { text: "Coruscant", correct: false },
+            { text: "Jakku", correct: false },
+            { text: "Endor", correct: false },
+            { text: "Exegol", correct: true },
+        ]
+    },
+    {
+        question: " who trains Luke Skywalker in the ways of the Force in Episode V?",
+        answers: [
+            { text: "Yoda", correct: true },
+            { text: "Qui-Gon Jinn", correct: false },
+            { text: "Mace Windu", correct: false },
+            { text: "Obi-Wan Kenobi", correct: false },
+        ]
+    },
+    {
+        question: "What is the primary weapon used by the Imperial AT-AT?",
+        answers: [
+            { text: "Blasters", correct: false },
+            { text: "Lightsabers", correct: false },
+            { text: "Ion Cannons", correct: false },
+            { text: "Laser Cannons", correct: true },
+        ]
     }
-
 ];
