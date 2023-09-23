@@ -68,3 +68,18 @@ As a user I want:
 
 ## Site Structure
  The site is made up of a single page that displays the main menu to the user upon initial load of the page. The page will then hide and display different content depending on the actions by the user. More information on the features that the site offers can be found in the features section.
+
+## Wireframes
+
+I created a basic wireframe on what I imagined I would like the site to look like using [Balsamiq.](https://balsamiq.com/)
+
+ - The final version of the site does differ from the inital wireframe  as there were changes made during the development process.
+	 - The first change that was made is that a close button ("X") was added to the top right hand corner of the main game area and the difficulty selection page.
+	
+		 - This change was added because there was no way for he user to return the main menu page without refreshing the whole page.
+	 - Another change that was made was the text within the difficulty selection. Instead of easy, medium and hard it was changed to Padawan, Jedi Knight and Jedi Master.
+		 - This change was added to give a more authentic experience to the user as this is a StarWars themed trivia game.
+	 - The display in which the answers are shown was also changed so instead of displaying in a row they would display in a 2x2 column. 
+		 - This change was added because the answers displayed better on bigger screens.
+
+All of these changes can be seen in the features section.
