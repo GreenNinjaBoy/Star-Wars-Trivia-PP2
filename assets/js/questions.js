@@ -299,5 +299,23 @@ const jediKnightQuestions = [
             { text: "Naboo", correct: false },
             { text: "Hoth", correct: false },
         ]
+    },
+    {
+        question:"Who is the Rebel leader and princess who plays a key role in the original Star Wars trilogy?",
+        answers: [
+            { text: "Padmé Amidala", correct: false},
+            { text: "Jyn Erso", correct: false},
+            { text: "Princess Leia Organa", correct: true},
+            { text: "Mon Mothma", correct: false},
+        ]
+    },
+    {
+        question: "Who wields a purple lightsaber in the Star Wars prequels?",
+        answers: [
+            { text: "Mace Windu", correct: true},
+            { text: "Obi-Wan Kenobi", correct: false},
+            { text: "Count Dooku", correct: false},
+            { text: "Anakin Skywalker", correct: false},
+        ]
     }
 ];
