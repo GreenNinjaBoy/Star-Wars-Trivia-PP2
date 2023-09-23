@@ -64,4 +64,7 @@ As a user I want:
  - To know what question I am on during the trivia.
  - To know if my answer is correct or incorrect.
  - To Know my final score
- - To be able to take the quiz again after completion. 
+ - To be able to take the quiz again after completion.
+
+## Site Structure
+ The site is made up of a single page that displays the main menu to the user upon initial load of the page. The page will then hide and display different content depending on the actions by the user. More information on the features that the site offers can be found in the features section.
