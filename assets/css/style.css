@@ -176,6 +176,12 @@ p {
     margin: 0 20px;
     padding: 10px;
     color: #abdfff;
+    overflow: overlay;
+    height: 100%;
+}
+/* style to hide the scroll bar on rules page */
+#rules::-webkit-scrollbar{
+    display: none;
 }
 
 li {
