@@ -83,3 +83,16 @@ I created a basic wireframe on what I imagined I would like the site to look lik
 		 - This change was added because the answers displayed better on bigger screens.
 
 All of these changes can be seen in the features section.
+
+# Design
+
+## Typography
+
+ - The font used for the main title page was imported from [Online Web Fonts](@import%20url%28%27https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star%20Jedi%20V2%27%29;).
+	 - This font was chosen because it was the closest font that could be found to replicate the main Star Wars title logo, again to give the user a more authentic experience.
+
+**Color**
+
+![Color Palette](assets/readme-images/color palette.png)
+
+	 - the color palette was generated with the help from [Coolers](https://coolors.co/) and were mainly focused on the black and yellow to give the user that authentic Star Wars experience.
