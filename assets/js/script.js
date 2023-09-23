@@ -7,6 +7,7 @@ const mainAnswerArea = document.getElementById("main-answer-area");
 const nextButton = document.getElementById("next-button");
 const timeDisplay = document.getElementById("timer");
 const questionImage = document.getElementById("question-image");
+const closeDifficulty = document.getElementById("close-difficulty");
 // variable yet to be defined
 
 let correctAnswer;
@@ -64,7 +65,6 @@ function triviaDifficultyPromt() {
     /* this will get the button to close the difficulty menu
     and will add an even listener to the button  */
 
-    const closeDifficulty = document.getElementById("close-difficulty");
     closeDifficulty.addEventListener("click", closeDifficultyPromt);
 
     //Displays the difficulty menu for the user
@@ -77,23 +77,43 @@ function triviaDifficultyPromt() {
     difficultyOptions.forEach((difficultySelection) => {
         difficultySelection.addEventListener("click", function () {
             difficultySetting.classList.add("hide");
-            if (this.getAttribute("id") === "easy") {
-                startPadawanTrivia();
-            } else if (this.getAttribute("id") === "medium") {
-                startJediKnightTrivia();
-            } else if (this.getAttribute("id") === "hard") {
-                startJediMasterTrivia();
-            }
+            const difficulty = this.getAttribute("id");
+            startTrivia(difficulty);
+        });
+    });
+    /** 
+     * This function will begin trivia based on user selection.
+     */
+    function startTrivia(difficulty) {
+        triviaArea.classList.remove("hide");
+        let questions;
+        
+        switch (difficulty) {
+            case "easy":
+                questions = padawanQuestions;
+                break;
+            case "medium":
+                questions = jediKnightQuestions;
+                break;
+            case "hard":
+                questions = jediMasterQuestions;
+                break;
+            default:
+                // Handle unknown difficulty level
+                return;
+        }
+        
+        shuffledQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 15);
+        currentQuestionIndex = 0;
+        nextQuestion();
+    }
 
             /*Gets the "end game" button to quit the quiz 
               and adds an event listener to it*/
             const endButton = document.getElementById("close-game");
             endButton.addEventListener("click", closeTrivia);
 
-        });
-    });
-}
-
+        };
 /**
  * Hides difficulty menu and displays the main menu to user.
  */
@@ -116,31 +136,11 @@ function closeTrivia() {
     clearInterval(timerInterval);
     resetScore();
 }
-
-function startPadawanTrivia() {
-    triviaArea.classList.remove("hide");
-    shuffledQuestions = padawanQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
-    currentQuestionIndex = 0;
-    nextQuestion();
-}
-
-function startJediKnightTrivia() {
-    triviaArea.classList.remove("hide");
-    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
-    currentQuestionIndex = 0;
-    nextQuestion();
-
-}
-
-function startJediMasterTrivia() {
-    triviaArea.classList.remove("hide");
-    shuffledQuestions = jediKnightQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
-    currentQuestionIndex = 0;
-    nextQuestion();
-}
-
-
-
+/**
+ * This function will display the next set of trivia content for the user
+ * until max number of questions is reached then will take user to the final
+ * results page.
+ */
 function nextQuestion() {
     clearInterval(timerInterval); // this will stop the timer form counting
     if (currentQuestionIndex < 15) {

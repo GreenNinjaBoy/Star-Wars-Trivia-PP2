@@ -265,7 +265,7 @@ footer {
         margin-top: 40px;
     }
 
-    .container {
+    .game-container {
         min-width: auto;
         margin: 20px auto;
         overflow-y: scroll;
@@ -278,13 +278,14 @@ footer {
 
     .btn{
         font-size: 1.2rem;
+        gap: 0;
     }
 
     /* Style for the answer buttons in a single row */
     .btn-grid {
         grid-template-columns: repeat(1, auto); /* Change to a single column */
-        gap: 10px;
-        margin-top: 10px; /
+        gap: 5px;
+        margin-top: 5px; /
     }
 }
 /* Media query for screens with a min width of 768px and max width of 1266px */
@@ -294,7 +295,7 @@ footer {
         margin-top: 80px;
     }
 
-    .container {
+    .game-container {
         min-width: 650px;
         margin: 40px auto;
     }
