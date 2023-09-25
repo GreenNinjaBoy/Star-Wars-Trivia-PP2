@@ -294,22 +294,7 @@ footer {
         margin-top: 5px; /
     }
 }
-/* Media query for screens with a min width of 768px and max width of 1266px */
-@media screen and (min-width: 679px) and (max-width: 1266px) {
-    h1 {
-        font-size: 4rem;
-        margin-top: 80px;
-    }
 
-    .game-container {
-        min-width: 650px;
-        margin: 40px auto;
-    }
-
-    #timer {
-        margin-left: 80px;
-    }
-}
 
 
 
