@@ -93,6 +93,6 @@ All of these changes can be seen in the features section.
 
 **Color**
 
-![Color Palette](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/color-palette.webp.png)
+![Color Palette](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/color-palette.webp.png?raw=true)
 
 	 - the color palette was generated with the help from [Coolers](https://coolors.co/) and were mainly focused on the black and yellow to give the user that authentic Star Wars experience.
