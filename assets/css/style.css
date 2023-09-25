@@ -264,12 +264,18 @@ footer {
         font-size: 3rem;
         margin-top: 40px;
     }
+    
+    #rules{
+        font-size: 1.3rem;
+    }
 
     .game-container {
-        min-width: auto;
-        min-height: auto;
         margin: 10px auto;
-        max-height: fit-content;
+        
+    }
+
+    .main-area{
+        flex-wrap: wrap;
     }
 
     #timer {
