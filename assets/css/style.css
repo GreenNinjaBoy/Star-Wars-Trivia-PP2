@@ -43,10 +43,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8em;
+    font-size: 1.3em;
     text-shadow: 0px 5px 20px #abdfff;
 }
-
 #question-area {
     color: aliceblue;
     text-shadow: 0px 5px 20px #FFE81F;
@@ -185,13 +184,8 @@ p {
     margin: 0 20px;
     padding: 10px;
     color: #abdfff;
-    overflow: overlay;
     height: 100%;
     font-family: 'Leauge Gothic', sans-serif;
-}
-/* style to hide the scroll bar on rules page */
-#rules::-webkit-scrollbar{
-    display: none;
 }
 
 li {
@@ -264,7 +258,7 @@ footer {
         font-size: 3rem;
         margin-top: 40px;
     }
-    
+
     #rules{
         font-size: 1.3rem;
     }
