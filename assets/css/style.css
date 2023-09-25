@@ -274,8 +274,14 @@ footer {
         
     }
 
+    .difficulty-container {
+        padding: 0;
+        margin-top: 15.5rem;
+    }
+
     .main-area{
         flex-wrap: wrap;
+        padding: 0 30px;
     }
 
     #timer {
