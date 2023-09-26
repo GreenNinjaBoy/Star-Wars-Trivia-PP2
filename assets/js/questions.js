@@ -301,21 +301,68 @@ const jediKnightQuestions = [
         ]
     },
     {
-        question:"Who is the Rebel leader and princess who plays a key role in the original Star Wars trilogy?",
+        question: "Who is the Rebel leader and princess who plays a key role in the original Star Wars trilogy?",
         answers: [
-            { text: "Padmé Amidala", correct: false},
-            { text: "Jyn Erso", correct: false},
-            { text: "Princess Leia Organa", correct: true},
-            { text: "Mon Mothma", correct: false},
+            { text: "Padmé Amidala", correct: false },
+            { text: "Jyn Erso", correct: false },
+            { text: "Princess Leia Organa", correct: true },
+            { text: "Mon Mothma", correct: false },
         ]
     },
     {
         question: "Who wields a purple lightsaber in the Star Wars prequels?",
         answers: [
-            { text: "Mace Windu", correct: true},
-            { text: "Obi-Wan Kenobi", correct: false},
-            { text: "Count Dooku", correct: false},
-            { text: "Anakin Skywalker", correct: false},
+            { text: "Mace Windu", correct: true },
+            { text: "Obi-Wan Kenobi", correct: false },
+            { text: "Count Dooku", correct: false },
+            { text: "Anakin Skywalker", correct: false },
+        ]
+    }
+];
+const jediMasterQuestions = [
+    {
+        question: "who was the announcer who provided colorful commentary during the Boonta Eve podrace?",
+        answers: [
+            { text: "Fode and Beed", correct: true },
+            { text: "Watto", correct: false },
+            { text: "Sebulba", correct: false },
+            { text: "Jabba the Hutt", correct: false },
+        ]
+    },
+    {
+        question: "Who was the architect behind the creation of the Clone Army?",
+        answers: [
+            { text: "Count Dooku", correct: false },
+            { text: "Darth Sidious", correct: false },
+            { text: "Jango Fett", correct: false },
+            { text: "Sifo-Dyas", correct: true },
+        ]
+    },
+    {
+        question: "Which Jedi Master was known for wielding a purple lightsaber?",
+        answers: [
+            { text: "Qui-Gon Jinn", correct: false },
+            { text: "Obi-Wan Kenobi", correct: false },
+            { text: "Jango Fett", correct: false },
+            { text: "Mace Windu", correct: true },
+        ]
+    },
+    {
+        question: "Who owned the droid R5-D4 before it malfunctioned and was purchased by Luke Skywalker in Episode IV?",
+        answers: [
+            { text: "Uncle Owen", correct: false },
+            { text: "Biggs Darklighter", correct: false },
+            { text: "Owen Lars", correct: false },
+            { text: "Jawas", correct: true },
+        ]
+    },
+    {
+        question: "What were the first words spoken by Darth Vader when he appears in his suit in Episode III?",
+        answers: [
+            { text: "I am your father", correct: false },
+            { text: "You underestimate my power!", correct: false },
+            { text: "This is the end for you, my master.", correct: false },
+            { text: "Yes Master", correct: true },
         ]
     }
 ];
