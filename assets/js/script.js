@@ -8,6 +8,8 @@ const nextButton = document.getElementById("next-button");
 const timeDisplay = document.getElementById("timer");
 const questionImage = document.getElementById("question-image");
 const closeDifficulty = document.getElementById("close-difficulty");
+const popup = document.getElementById("pop-up");
+const closePopupButton = document.getElementById("close-popup");
 // variable yet to be defined
 
 let correctAnswer;
@@ -233,7 +235,7 @@ function timer() {
  */
 
 function timeup() {
-    alert("time run out you have!");
+    displayPopup();
     clearInterval(timerInterval); //This will stop the timer from counting.
     mainAnswerArea.classList.add("no-pointer"); // this will prevent user form clicking when timer runs out
 
@@ -248,6 +250,16 @@ function timeup() {
     correctAnswer.classList.add("correct-answer");
     nextButton.classList.remove("hide");
 }
+
+function displayPopup() {
+    popup.classList.remove("hide");
+}
+
+function closePopup() {
+    popup.classList.add("hide");
+}
+
+closePopupButton.addEventListener("click", closePopup);
 
 function checkAnswer(event) {
     clearInterval(timerInterval); //this will stop the timer from counting.
