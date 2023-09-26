@@ -364,5 +364,42 @@ const jediMasterQuestions = [
             { text: "This is the end for you, my master.", correct: false },
             { text: "Yes Master", correct: true },
         ]
+    },
+    {
+        question: " Who was the captain of the Millennium Falcon before Han solo?",
+        answers: [
+            { text: "Lando Calrissian", correct: true },
+            { text: "Nien Nunb", correct: false },
+            { text: "Lobot", correct: false },
+            { text: "Ray", correct: false },
+
+        ]
+    },
+    {
+        question: "In Episode I, who served as Queen Amidala's loyal bodyguard and captain of her security force?",
+        answers: [
+            { text: "Captain Panaka", correct: true },
+            { text: " Captain Rex", correct: false },
+            { text: "Captain Phasma", correct: false },
+            { text: "Captain Needa", correct: false },
+        ]
+    },
+    {
+        question: "What ancient Sith artifact did Rey discover on the oceanic moon of Kef Bir?",
+        answers: [
+            { text: "The Wayfinder", correct: true },
+            { text: "The Dagger of Mortis", correct: false },
+            { text: "The Sith Holocron", correct: false },
+            { text: "The Kyber Crystal", correct: false },
+        ]
+    },
+    {
+        question: "What is the name of the Sith Lord who was Emperor Palpatine's master, mentioned in Episode III?",
+        answers: [
+            { text: "Darth Plagueis", correct: true },
+            { text: "Darth Tyranus", correct: false },
+            { text: "Darth Revan", correct: false },
+            { text: "Darth Nihilusl", correct: false },
+        ]
     }
 ];
