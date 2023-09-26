@@ -253,10 +253,12 @@ function timeup() {
 
 function displayPopup() {
     popup.classList.remove("hide");
+    triviaArea.classList.add("hide");
 }
 
 function closePopup() {
     popup.classList.add("hide");
+    triviaArea.classList.remove("hide");
 }
 
 closePopupButton.addEventListener("click", closePopup);

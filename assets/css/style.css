@@ -226,6 +226,10 @@ footer {
     display: none;
 }
 
+#pop-up h2{
+    font-size: 2rem;
+}
+
 @keyframes pulsate {
     100% {
         text-shadow:
@@ -302,6 +306,10 @@ footer {
         grid-template-columns: repeat(1, auto); /* Change to a single column */
         gap: 5px;
         margin-top: 5px; /
+    }
+    /* Style to make popup image responsive*/
+    .popup-img{
+        height: 300px;
     }
 }
 
