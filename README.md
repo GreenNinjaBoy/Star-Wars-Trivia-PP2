@@ -84,6 +84,13 @@ I created a basic wireframe on what I imagined I would like the site to look lik
 
 All of these changes can be seen in the features section.
 
+![wireframe of main page](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-main-page.webp.png?raw=true)
+
+![wireframe of difficulty menu](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-difficulty.webp.png?raw=true)
+
+![wireframe of rules page](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-rules.webp.png?raw=true)
+
+![wireframe of questions](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-questions.webp.png?raw=true)
 # Design
 
 ## Typography
