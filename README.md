@@ -102,4 +102,16 @@ All of these changes can be seen in the features section.
 
 ![Color Palette](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/color-palette.webp.png?raw=true)
 
-	 - the color palette was generated with the help from [Coolers](https://coolors.co/) and were mainly focused on the black and yellow to give the user that authentic Star Wars experience.
+The color palette was generated with the help from [Coolers](https://coolors.co/) and were mainly focused on the black and yellow to give the user that authentic Star Wars experience.
+
+
+## Features
+
+**Existing Features **
+
+ - **The Heading**
+	 - The heading is featured on the landing page just above the main menu.
+	 - It has been styled to be captivating giving the user an authentic feel and its content refers to the purpose of the site.
+	 - The header helps the user understand the purpose of the site and creates a positive impression.
+
+![Header Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/main-header.png?raw=true)
