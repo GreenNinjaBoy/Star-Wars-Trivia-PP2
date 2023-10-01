@@ -68,6 +68,10 @@ p {
     color: white;
 }
 
+ul {
+    margin: 0;
+}
+
 /* Style for game container card */
 .game-container {
     position: relative;
