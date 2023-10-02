@@ -155,18 +155,13 @@ function nextQuestion() {
 /**This finction will display the trivia content 
  */
 function displayTriviaContent(question) {
-
-    if (question.imgUrl != null) {
-        questionImage.src = question.imgUrl;
-        document.getElementById("question-image").classList.remove("img-hide");
-    } else {
-        document.getElementById("question-image").classList.add("img-hide");
-    }
-
     //displays the question container
     const questionContainer = document.getElementById("question");
-
     questionContainer.innerText = question.question;
+
+    const questionImage = document.createElement('img');
+    questionImage.alt = 'Question Image';
+    questionImage.src = question.imgUrl;
 
     // Shuffles the answer array
     shuffleArray(question.answers);
