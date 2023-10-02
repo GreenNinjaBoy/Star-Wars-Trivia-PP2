@@ -162,8 +162,8 @@ function displayTriviaContent(question) {
     const questionImage = document.createElement('img');
     questionImage.alt = 'Question Image';
     questionImage.src = question.imgUrl;
-    document.body.appendChild(questionImage);
-    
+    mainAnswerArea.appendChild(questionImage);
+
 
     // Shuffles the answer array
     shuffleArray(question.answers);
