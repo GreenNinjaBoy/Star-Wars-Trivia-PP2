@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 /**
  * Whilst displaying the rules, the main menu will be hiddden
  * and will add an event listener for the close button.
@@ -47,7 +46,6 @@ function displayGameRules() {
     closeRulesButton.addEventListener("click", closeRules);
 
 }
-
 /**
  * This function will hide the rules and displays the main menu.
  */
@@ -83,39 +81,40 @@ function triviaDifficultyPromt() {
             startTrivia(difficulty);
         });
     });
-    /** 
-     * This function will begin trivia based on user selection.
-     */
-    function startTrivia(difficulty) {
-        triviaArea.classList.remove("hide");
-        let questions;
-        
-        switch (difficulty) {
-            case "easy":
-                questions = padawanQuestions;
-                break;
-            case "medium":
-                questions = jediKnightQuestions;
-                break;
-            case "hard":
-                questions = jediMasterQuestions;
-                break;
-            default:
-                // Handle unknown difficulty level
-                return;
-        }
-        
-        shuffledQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 15);
-        currentQuestionIndex = 0;
-        nextQuestion();
+
+
+    /*Gets the "end game" button to quit the quiz 
+      and adds an event listener to it*/
+    const endButton = document.getElementById("close-game");
+    endButton.addEventListener("click", closeTrivia);
+
+};
+/** 
+ * This function will begin trivia based on user selection.
+ */
+function startTrivia(difficulty) {
+    triviaArea.classList.remove("hide");
+    let questions;
+
+    switch (difficulty) {
+        case "easy":
+            questions = padawanQuestions;
+            break;
+        case "medium":
+            questions = jediKnightQuestions;
+            break;
+        case "hard":
+            questions = jediMasterQuestions;
+            break;
+        default:
+            // Handle unknown difficulty level
+            return;
     }
 
-            /*Gets the "end game" button to quit the quiz 
-              and adds an event listener to it*/
-            const endButton = document.getElementById("close-game");
-            endButton.addEventListener("click", closeTrivia);
-
-        };
+    shuffledQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 15);
+    currentQuestionIndex = 0;
+    nextQuestion();
+}
 /**
  * Hides difficulty menu and displays the main menu to user.
  */
@@ -124,7 +123,6 @@ function closeDifficultyPromt() {
     difficultySetting.classList.add("hide");
     triviaHeading.classList.remove("hide");
     triviaMenu.classList.remove("hide");
-
 }
 
 /** 
@@ -154,16 +152,17 @@ function nextQuestion() {
         finalResult();
     }
 }
-
+/**This finction will display the trivia content 
+ */
 function displayTriviaContent(question) {
-   
+
     if (question.imgUrl != null) {
         questionImage.src = question.imgUrl;
         document.getElementById("question-image").classList.remove("img-hide");
     } else {
         document.getElementById("question-image").classList.add("img-hide");
     }
-   
+
     //displays the question container
     const questionContainer = document.getElementById("question");
 
@@ -187,17 +186,17 @@ function displayTriviaContent(question) {
         button.addEventListener("click", checkAnswer);
         mainAnswerArea.appendChild(button);
     });
+    displayQuestionNumber();
+}
 
-    // Function to shuffle an array randomly
-    function shuffleArray(array) {
+/** Function to shuffle an array randomly*/
+function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-
-    displayQuestionNumber();
-}
+/**This function will display the question number*/
 function displayQuestionNumber() {
     const questionNumber = document.getElementById("trivia-number");
     questionNumber.innerText = currentQuestionIndex + 1;
@@ -209,7 +208,6 @@ function displayQuestionNumber() {
 /**
  * Sets the interval time for the timer function
  */
-
 function startTimer() {
     timerInterval = setInterval(timer, 1000);
 }
@@ -219,7 +217,6 @@ function startTimer() {
  * and decrements time if it is so. 
  * Otherwise, timeup function will be called.
  */
-
 function timer() {
     if (timeLeft <= 0) {
         timeup();
@@ -233,7 +230,6 @@ function timer() {
  * creates an alert message that the users time is up
  * and provides feedback on correct and incorrect answers.
  */
-
 function timeup() {
     displayPopup();
     clearInterval(timerInterval); //This will stop the timer from counting.
@@ -244,7 +240,6 @@ function timeup() {
     for (let wrongAnswer of wrongAnswers) {
         wrongAnswer.classList.add('wrong-answer');
     }
-
     // retrieves correct answer and adds class for correct answers to them.
     correctAnswer = document.getElementById("correct");
     correctAnswer.classList.add("correct-answer");
@@ -263,6 +258,10 @@ function closePopup() {
 
 closePopupButton.addEventListener("click", closePopup);
 
+/**This function will check what answer the user
+ * has selected, then show the user if they are correct
+ * or incorrect.
+ */
 function checkAnswer(event) {
     clearInterval(timerInterval); //this will stop the timer from counting.
     mainAnswerArea.classList.add("no-pointer"); // this will prevent user form clicking when answer is selected.
@@ -313,7 +312,7 @@ const movieQuote = document.getElementById("movie-quote");
 
 function displayTextFinalScore(score) {
     if (score === 15) {
-        return "Well done Master"
+        return "Well done Master";
     } else if (score >= 10 && score <= 14) {
         return "You are on this council but we do not grant you the rank of master";
     } else if (score <= 9) {
@@ -332,7 +331,9 @@ function resetQuizContent() {
         mainAnswerArea.removeChild(mainAnswerArea.firstChild);
     }
 }
-
+/**Think function will display the final results and a message 
+ * to the user depending on their score
+ */
 function finalResult() {
     const scoreText = displayTextFinalScore(score);
     movieQuote.innerText = scoreText;
@@ -360,22 +361,11 @@ function finalResult() {
         });
     });
 }
-
-
-
-// this function will display a message depending on user score
-
-
-
-
 /**
  * Will reset the score for the user when a new quiz 
  * is started.
  */
-
 function resetScore() {
     score = document.getElementById("user-score");
     score.innerText = 0;
 }
-
-//
