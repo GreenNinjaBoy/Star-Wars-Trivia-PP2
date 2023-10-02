@@ -154,14 +154,15 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
 	 - Once the user has selected their difficulty, the quiz area is then displayed and the quiz will begin.
 ![Main Question Area](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/main-question-area.png?raw=true)
 	- In the top right hand corner of the main quiz area is a button "X" for the user to exit the quiz at any given time. 
-	- This is useful for the user to exit without having to refresh the page.	![Close Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-image.png?raw=true)
-	![Close button Hover](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-hover-image.png?raw=true)
+	- This is useful for the user to exit without having to refresh the page.	
+![Close Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-image.png?raw=true)
+![Close button Hover](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-hover-image.png?raw=true)
 
 
 	- At the top of the quiz is the question number display which changes depending on which question the user is out of 15.
 	- This is useful to the user as it informs them of what stage they are at when participating in the quiz.
 	
-		![Question Number Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/question-number-image.png?raw=true)
+![Question Number Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/question-number-image.png?raw=true)
 	- Next to the question display is a timer which displays the amount of time there is to answer the current question.
 	- This is useful as it shows the user how much time they have left to answer the question.
 ![Timer Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/timer-image.png?raw=true)
