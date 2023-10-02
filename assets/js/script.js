@@ -161,8 +161,11 @@ function displayTriviaContent(question) {
 
     const questionImage = document.createElement('img');
     questionImage.alt = 'Question Image';
-    questionImage.src = question.imgUrl;
-    mainAnswerArea.appendChild(questionImage);
+    if (question.imgUrl) {
+        questionImage.src = question.imgUrl;
+        mainAnswerArea.appendChild(questionImage);
+    }
+    
 
 
     // Shuffles the answer array
