@@ -251,14 +251,16 @@ function timeup() {
 function displayPopup() {
     popup.classList.remove("hide");
     triviaArea.classList.add("hide");
+
+    setTimeout(function() {
+        closePopup();
+    }, 3000);
 }
 
 function closePopup() {
     popup.classList.add("hide");
     triviaArea.classList.remove("hide");
 }
-
-closePopupButton.addEventListener("click", closePopup);
 
 /**This function will check what answer the user
  * has selected, then show the user if they are correct
