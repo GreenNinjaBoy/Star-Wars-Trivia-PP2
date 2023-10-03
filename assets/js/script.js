@@ -161,6 +161,7 @@ function displayTriviaContent(question) {
 
     const questionImage = document.createElement('img');
     questionImage.alt = 'Question Image';
+    questionImage.classList.add('question-image');
     if (question.imgUrl) {
         questionImage.src = question.imgUrl;
         mainAnswerArea.appendChild(questionImage);
@@ -175,6 +176,7 @@ function displayTriviaContent(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
+        button.classList.add('answer-btn');
         button.classList.add('btn');
         if (answer.correct) {
             button.id = "correct";

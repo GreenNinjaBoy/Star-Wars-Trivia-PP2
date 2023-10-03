@@ -99,11 +99,21 @@ ul {
 
 /* Style for the answer buttons */
 .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 5px 0;
     font-size: 0.8rem;
+    justify-content: space-evenly;
+}
+
+.question-image {
+    display: block;
+    margin: 0 auto; /* This centers the image horizontally */
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
 }
 
 .btn {
@@ -120,6 +130,11 @@ ul {
     border-style: solid;
     border: none;
     border-radius: 20px;
+}
+
+.answer-btn {
+    margin: 10px auto;
+
 }
 
 /* To ensure the correct function is displayed when running */
