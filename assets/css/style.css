@@ -3,7 +3,7 @@
 /* link to CDN fonts which had the star wars themed font*/
 @import url('https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi+V2');
 
-* General styles */ * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -99,8 +99,8 @@ ul {
 
 /* Style for the answer buttons */
 .btn-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 5px 0;
     font-size: 0.8rem;
@@ -326,7 +326,7 @@ footer {
         grid-template-columns: repeat(1, auto);
         /* Change to a single column */
         gap: 5px;
-        margin-top: 5px;/
+        margin-top: 5px;
     }
 
     /* Style to make popup image responsive*/

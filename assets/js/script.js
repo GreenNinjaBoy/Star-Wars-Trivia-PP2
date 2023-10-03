@@ -1,15 +1,16 @@
+/*jshint esversion: 6*/
 const triviaHeading = document.getElementById("trivia-heading");
 const triviaMenu = document.getElementById("trivia-menu");
 const gameRules = document.getElementById("rules");
 const difficultySetting = document.getElementById("difficulty-setting");
 const triviaArea = document.getElementById("trivia-area");
 const mainAnswerArea = document.getElementById("main-answer-area");
+const mainQuestionArea = document.getElementById("question-area");
 const nextButton = document.getElementById("next-button");
 const timeDisplay = document.getElementById("timer");
-const questionImage = document.getElementById("question-image");
 const closeDifficulty = document.getElementById("close-difficulty");
 const popup = document.getElementById("pop-up");
-const closePopupButton = document.getElementById("close-popup");
+const imageElement= document.createElement('img');
 // variable yet to be defined
 
 let correctAnswer;
@@ -88,7 +89,7 @@ function triviaDifficultyPromt() {
     const endButton = document.getElementById("close-game");
     endButton.addEventListener("click", closeTrivia);
 
-};
+}
 /** 
  * This function will begin trivia based on user selection.
  */
@@ -159,12 +160,12 @@ function displayTriviaContent(question) {
     const questionContainer = document.getElementById("question");
     questionContainer.innerText = question.question;
 
-    const questionImage = document.createElement('img');
-    questionImage.alt = 'Question Image';
-    questionImage.classList.add('question-image');
+    
+    imageElement.alt = 'Question Image';
+    imageElement.classList.add('question-image');
     if (question.imgUrl) {
-        questionImage.src = question.imgUrl;
-        mainAnswerArea.appendChild(questionImage);
+        imageElement.src = question.imgUrl;
+        mainQuestionArea.appendChild(imageElement);
     }
     
 
@@ -198,6 +199,7 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
+
 /**This function will display the question number*/
 function displayQuestionNumber() {
     const questionNumber = document.getElementById("trivia-number");
@@ -247,7 +249,7 @@ function timeup() {
     correctAnswer.classList.add("correct-answer");
     nextButton.classList.remove("hide");
 }
-
+/** shows a pop up if the user runs out  of time*/ 
 function displayPopup() {
     popup.classList.remove("hide");
     triviaArea.classList.add("hide");
@@ -256,7 +258,7 @@ function displayPopup() {
         closePopup();
     }, 3000);
 }
-
+/**closes pop up after 3 seconds */
 function closePopup() {
     popup.classList.add("hide");
     triviaArea.classList.remove("hide");
@@ -323,10 +325,11 @@ function displayTextFinalScore(score) {
         return "You have been trained well.... but your not a Jedi yet!";
     }
 }
-// created a function that will reset the quiz content
+/** created a function that will reset the quiz content */
 function resetQuizContent() {
     nextButton.classList.add("hide"); // will hide the next question button.
     mainAnswerArea.classList.remove("no-pointer"); //allows user to click again in answer area.
+    imageElement.remove();
     timeLeft = 16; // will reset the max amount of time
     startTimer(); // will reset the interval for the timer.
 
@@ -372,4 +375,4 @@ function finalResult() {
 function resetScore() {
     score = document.getElementById("user-score");
     score.innerText = 0;
-}
+    }
