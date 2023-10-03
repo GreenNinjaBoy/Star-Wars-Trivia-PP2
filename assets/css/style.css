@@ -27,9 +27,9 @@ body {
 /* Styles for heading texts */
 h1 {
     color: #FFE81F;
-    font-size: 500%;
-    margin-top: 80px;
-    padding-top: 20px;
+    font-size: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
     letter-spacing: 5px;
 }
 
