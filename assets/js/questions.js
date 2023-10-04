@@ -179,6 +179,111 @@ const padawanQuestions = [
             { text: "Luke Skywalker", correct: true },
         ]
     },
+    {
+        question: "Anakin Skywalker was trained as a Jedi by Obi-Wan Kenobi.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Vader is Luke Skywalker's father.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Princess Leia was a member of the Rebel Alliance.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "The Millennium Falcon is a Corellian YT-1300 light freighter.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Yoda trained both Luke Skywalker and Count Dooku as Jedi.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Darth Maul wielded a double-bladed lightsaber.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Chewbacca is a Wookiee from the planet Kashyyyk.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Luke Skywalker and Princess Leia are twins.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "The Sith always operate in pairs, with a master and an apprentice.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "The Rebel Alliance destroyed the Death Star in Episode IV: A New Hope.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Vader was originally a podracer on Tatooine.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Obi-Wan Kenobi survived Order 66 and went into hiding on Tatooine.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "C-3PO and R2-D2 were always together throughout all the movies.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "The planet Hoth appears in Episode IV: A New Hope.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Lando Calrissian was the original owner of the Millennium Falcon.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    }
 ];
 
 const jediKnightQuestions = [
@@ -317,6 +422,111 @@ const jediKnightQuestions = [
             { text: "Count Dooku", correct: false },
             { text: "Anakin Skywalker", correct: false },
         ]
+    },
+    {
+        question: "Darth Vader's birth name was Anakin Skywalker.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Princess Leia was trained as a Jedi Knight.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Luke Skywalker lost his hand in a lightsaber duel with Darth Vader.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Yoda was the last of the Jedi Knights.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "The Death Star was destroyed in both Episode IV and Episode VI.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Maul survived his encounter with Obi-Wan Kenobi.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "The Jedi Council trained Anakin Skywalker despite his age.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Han Solo and Princess Leia had a daughter named Rey.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Darth Vader killed Obi-Wan Kenobi in a lightsaber duel.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Rey's parents were revealed to be significant characters in the Star Wars saga.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "The Millennium Falcon was originally owned by Lando Calrissian.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Yoda trained Count Dooku as a Jedi.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Anakin Skywalker was a podracing champion on Tatooine.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Padmé Amidala was the Queen of Naboo before becoming a Senator.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Sidious was Emperor Palpatine's Sith apprentice.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
     }
 ];
 const jediMasterQuestions = [
@@ -350,7 +560,7 @@ const jediMasterQuestions = [
     {
         question: "Who owned the droid R5-D4 before it malfunctioned and was purchased by Luke Skywalker in Episode IV?",
         answers: [
-            { text: "Uncle Owen", correct: false },
+            { text: "Watto", correct: false },
             { text: "Biggs Darklighter", correct: false },
             { text: "Owen Lars", correct: false },
             { text: "Jawas", correct: true },
@@ -400,6 +610,165 @@ const jediMasterQuestions = [
             { text: "Darth Tyranus", correct: false },
             { text: "Darth Revan", correct: false },
             { text: "Darth Nihilusl", correct: false },
+        ]
+    },
+    {
+        question: "In Episode VII: The Force Awakens, what organization did Poe Dameron work for?",
+        answers: [
+            { text: "The Rebel Alliance", correct: false },
+            { text: "The Resistance", correct: true },
+            { text: "The Galactic Empire", correct: false },
+            { text: "The First Order", correct: false }
+        ]
+    },
+    {
+        question: "What did Luke Skywalker drink while on Ahch-To in Episode VIII: The Last Jedi?",
+        answers: [
+            { text: "Blue Milk", correct: true },
+            { text: "Yobacca Juice", correct: false },
+            { text: "Endorian Ale", correct: false },
+            { text: "Womp Rat Whiskey", correct: false }
+        ]
+    },
+    {
+        question: "In Episode III: Revenge of the Sith, who killed Mace Windu?",
+        answers: [
+            { text: "Anakin Skywalker", correct: false },
+            { text: "Count Dooku", correct: false },
+            { text: "Emperor Palpatine", correct: true },
+            { text: "Yoda", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the ancient Jedi texts that Luke Skywalker was guarding on Ahch-To in Episode VIII: The Last Jedi?",
+        answers: [
+            { text: "The Jedi Code", correct: false },
+            { text: "The Journal of the Whills", correct: true },
+            { text: "The Sacred Scrolls", correct: false },
+            { text: "The Force Unleashed", correct: false }
+        ]
+    },
+    {
+        question: "What type of creature did Rey use as a mount on Pasaana in Episode IX: The Rise of Skywalker?",
+        answers: [
+            { text: "Bantha", correct: false },
+            { text: "Tauntaun", correct: false },
+            { text: "Fathier", correct: true },
+            { text: "Blurrg", correct: false }
+        ]
+    },
+    {
+        question: "In Episode VIII: The Last Jedi, what is the name of the casino city on the planet Cantonica?",
+        answers: [
+            { text: "Mos Eisley", correct: false },
+            { text: "Canto Bight", correct: true },
+            { text: "Maz Kanata's Castle", correct: false },
+            { text: "Jedha City", correct: false }
+        ]
+    },
+    {
+        question: "Darth Vader's birth name was Anakin Skywalker.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Princess Leia was trained as a Jedi Knight.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Luke Skywalker lost his hand in a lightsaber duel with Darth Vader.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Yoda was the last of the Jedi Knights.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "The Death Star was destroyed in both Episode IV and Episode VI.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Maul survived his encounter with Obi-Wan Kenobi.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "The Jedi Council trained Anakin Skywalker despite his age.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Han Solo and Princess Leia had a daughter named Rey.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Darth Vader killed Obi-Wan Kenobi in a lightsaber duel.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Rey's parents were revealed to be significant characters in the Star Wars saga.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "The Millennium Falcon was originally owned by Lando Calrissian.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Yoda trained Count Dooku as a Jedi.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
+        ]
+    },
+    {
+        question: "Anakin Skywalker was a podracing champion on Tatooine.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Padmé Amidala was the Queen of Naboo before becoming a Senator.",
+        answers: [
+            { text: "True", correct: true },
+            { text: "False", correct: false }
+        ]
+    },
+    {
+        question: "Darth Sidious was Emperor Palpatine's Sith apprentice.",
+        answers: [
+            { text: "True", correct: false },
+            { text: "False", correct: true }
         ]
     }
 ];
