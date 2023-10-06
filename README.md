@@ -83,6 +83,14 @@ I created a basic wireframe on what I imagined I would like the site to look lik
 
 All of these changes can be seen in the features section.
 
+![wireframe of main page](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-main-page.webp.png?raw=true)
+
+![wireframe of difficulty menu](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-difficulty.webp.png?raw=true)
+
+![wireframe of rules page](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-rules.webp.png?raw=true)
+
+![wireframe of questions](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/wireframe-questions.webp.png?raw=true)
+
 # Design
 
 ## Typography
@@ -98,7 +106,6 @@ All of these changes can be seen in the features section.
 The color palette was generated with the help from [Coolers](https://coolors.co/) and were mainly focused on the black and yellow to give the user that authentic Star Wars experience.
 	 - 
  
-
 ## Features
 
 **Existing Features** 
@@ -136,21 +143,24 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
 	 - If the user is using a desktop device these buttons use the same animation as the main menu buttons.
 
 ![Difficulty Menu Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/difficulty-menu-image.png?raw=true)
+
 ![Padawan Difficulty](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/difficulty-padawan.png?raw=true)
 
 ![Jedi Knight Difficulty](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/difficulty-jedi-knight.png?raw=true)
+
 ![Jedi Master Difficulty](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/difficulty-jedi-master.png?raw=true)
 
  **The Main Quiz Area.**
 - Once the user has selected their difficulty, the quiz area is then displayed and the quiz will begin.
+
 ![Main Question Area](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/main-question-area.png?raw=true)
 
 **The Close Button**
 - In the top right hand corner of the main quiz area is a button "X" for the user to exit the quiz at any given time.
  
-	- This is useful for the user to exit without having to refresh the page.
+- This is useful for the user to exit without having to refresh the page.
 
- ![Close Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-image.png?raw=true)
+![Close Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-image.png?raw=true)
 
 ![Close button Hover](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-hover-image.png?raw=true)
 

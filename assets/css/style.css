@@ -83,7 +83,6 @@ ul {
     border-radius: 10px;
     padding: 20px;
     display: flex;
-    /*flex-wrap: wrap;*/
     flex-direction: column;
     box-shadow: 0 0 .2rem #fff,
         0 0 .2rem #fff,
@@ -200,12 +199,13 @@ ul {
 
 /* Style for the rules page */
 #rules {
+    height: fit-content;
     text-align: center;
     font-size: 150%;
     margin: 0 20px;
     padding: 10px;
     color: #abdfff;
-    height: 100%;
+    height: fit-content;
     font-family: 'Leauge Gothic', sans-serif;
 }
 
@@ -244,6 +244,10 @@ footer {
 
 .img-hide {
     display: none;
+}
+
+.popup-img {
+    object-fit: cover;
 }
 
 #pop-up h2 {
@@ -329,8 +333,4 @@ footer {
         margin-top: 5px;
     }
 
-    /* Style to make popup image responsive*/
-    .popup-img {
-        height: 300px;
-    }
 }

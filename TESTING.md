@@ -132,9 +132,11 @@ I used google lighthouse test within the chrome developer tools to test the site
 I tested for both desktop and mobile and the results can be seen below:
 
  - **Desktop**
+ 
 ![Lighthouse desktop](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/lighthouse-desktop-test.png?raw=true)
 
  - **Mobile**
+
 ![Lighthouse Mobile](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/lighthouse-mobile-test.png?raw=true)
 > Written with [StackEdit](https://stackedit.io/).
 

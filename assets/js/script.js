@@ -11,6 +11,12 @@ const timeDisplay = document.getElementById("timer");
 const closeDifficulty = document.getElementById("close-difficulty");
 const popup = document.getElementById("pop-up");
 const imageElement= document.createElement('img');
+const movieQuote = document.getElementById("movie-quote");
+
+/* Listens for the user to click the next question button
+    and call the function for the next question. */
+nextButton.addEventListener("click", nextQuestion);
+
 // variable yet to be defined
 
 let correctAnswer;
@@ -45,7 +51,6 @@ function displayGameRules() {
     triviaMenu.classList.add("hide");
     const closeRulesButton = document.getElementById("close-rules");
     closeRulesButton.addEventListener("click", closeRules);
-
 }
 /**
  * This function will hide the rules and displays the main menu.
@@ -54,7 +59,6 @@ function closeRules() {
     gameRules.classList.add("hide");
     triviaHeading.classList.remove("hide");
     triviaMenu.classList.remove("hide");
-
 }
 /**
  * Displays the games difficulty options
@@ -159,8 +163,6 @@ function displayTriviaContent(question) {
     //displays the question container
     const questionContainer = document.getElementById("question");
     questionContainer.innerText = question.question;
-
-    
     imageElement.alt = 'Question Image';
     imageElement.classList.add('question-image');
     if (question.imgUrl) {
@@ -168,8 +170,6 @@ function displayTriviaContent(question) {
         mainQuestionArea.appendChild(imageElement);
     }
     
-
-
     // Shuffles the answer array
     shuffleArray(question.answers);
 
@@ -256,7 +256,7 @@ function displayPopup() {
 
     setTimeout(function() {
         closePopup();
-    }, 3000);
+    }, 30000);
 }
 /**closes pop up after 3 seconds */
 function closePopup() {
@@ -281,11 +281,6 @@ function checkAnswer(event) {
     }
     nextButton.classList.remove("hide"); // should display the next question button.
 }
-/* Listens for the user to click the next question button
-    and call the function for the next question. */
-
-nextButton.addEventListener("click", nextQuestion);
-
 /**
  * gets the users current score in inrecments that score by 1.
  */
@@ -300,8 +295,6 @@ function incrementScore() {
 /* Listens for the user to click the next question button
     and call the function for the next question. */
 
-nextButton.addEventListener("click", nextQuestion);
-
 /**
  * gets the users current score in inrecments that score by 1.
  */
@@ -314,8 +307,7 @@ function incrementScore() {
     document.getElementById("user-score").innerText = ++score;
 }
 
-const movieQuote = document.getElementById("movie-quote");
-
+/** a function to display text depending on user score */
 function displayTextFinalScore(score) {
     if (score === 15) {
         return "Well done Master";
@@ -350,7 +342,6 @@ function finalResult() {
     triviaHeading.classList.remove("hide");
     triviaComplete.classList.remove("hide");
     finalScore.innerText = score; // will display final result for the user
-
 
     /* Generates the buttons with the class "trivia-complete-btn" and
     adds event listener to then */
