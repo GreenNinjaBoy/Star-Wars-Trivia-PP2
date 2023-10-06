@@ -187,9 +187,13 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
  - **Incorrect Answer Display**
 	 - If the user clicks on the incorrect answer, the selected answer text will highlight red and the correct answer will be highlighted in green to inform the user which answer was correct.
 ![incorrect answer](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/incorrect-answer-image.png?raw=true)
- - **The Time up Display**
+  **The Time up Display**
 	 - If the user does not answer a question within the given time, a message will pop up to inform the user that they have ran out of time.
-	 - After the user clicks the reveal answer button on the pop up, the correct answer will highlight in green and the incorrect answers will highlight in red.
+
+![popup display](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/popup-image.png?raw=true)
+
+
+	- The pop up display will disappear after 3 seconds , then the user will see the correct answer will highlight in green and the incorrect answers will highlight in red.
 ![Run Out of Time Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/out-of-time-answer-image.png?raw=true)
  - **Completed Quiz Display**
 	 - At the end of the quiz, the main quiz area is replaced by a completed quiz display.
