@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 const jediMasterQuestions = [
     {
         question: "who was the announcer who provided colorful commentary during the Boonta Eve podrace?",

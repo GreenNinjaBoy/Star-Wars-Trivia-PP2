@@ -3,7 +3,7 @@
    https://www.youtube.com/watch?v=riDzcEQbX6k*/
 
 // Creating an object containing the Padawan (easy) questions.
-
+/*jshint esversion: 6*/
 const padawanQuestions = [
     {
         question: "What color is yodas lightsaber?",

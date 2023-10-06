@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 const jediKnightQuestions = [
     {
         question: "Who is the director of 'Star Wars: EpisodeIV - A New Hope?",
