@@ -256,7 +256,7 @@ function displayPopup() {
 
     setTimeout(function() {
         closePopup();
-    }, 30000);
+    }, 3000);
 }
 /**closes pop up after 3 seconds */
 function closePopup() {
