@@ -1,12 +1,12 @@
 
 
+
 # Star Wars Trivia
-The Star Wars Trivia is a site designed for users who have a love for the world of Star Wars and would like to put their knowledge to the test.
+The Star Wars Trivia is a site designed for users who have a love for the world of Star Wars and would like to put their knowledge to the test. The site was designed based around the nine feature films (episode I - IX) and the content for those who are fans of the series and people who have recently been introduced to the world of StarWars.
 
-You can access the live site here.
+You can access the live site [here](https://greenninjaboy.github.io/Star-Wars-Trivia-PP2/).
 
-
-note to self: Insert device imagery here when ready!!
+![Responsive Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/responsive-image.png?raw=true)
 
 ## Contents
 
