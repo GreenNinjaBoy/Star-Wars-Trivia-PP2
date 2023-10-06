@@ -148,15 +148,17 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
 **The Close Button**
 - In the top right hand corner of the main quiz area is a button "X" for the user to exit the quiz at any given time.
  
-	- This is useful for the user to exit without having to refresh the page.	
+	- This is useful for the user to exit without having to refresh the page.
+
  ![Close Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-image.png?raw=true)
-	![Close button Hover](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-hover-image.png?raw=true)
+
+![Close button Hover](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/close-button-hover-image.png?raw=true)
 
 **The Question Display**
 - At the top of the quiz is the question number display which changes depending on which question the user is out of 15.
 	- This is useful to the user as it informs them of what stage they are at when participating in the quiz.
 	
-		![Question Number Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/question-number-image.png?raw=true)
+	![Question Number Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/question-number-image.png?raw=true)
 
 **Timer**
 
@@ -181,20 +183,28 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
 	 - This lets the user move to the next question when they are ready to do so.
 	 
 ![Next Button](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/next-question-button.png?raw=true)
+
  - **Correct Answer Display**
+
 	-	If the user clicks on the correct answer, the selected answer text will highlight in green and the users score will increment by 1 point.
+
 ![Correct Answer](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/correct-answer-image.png?raw=true)
+
  - **Incorrect Answer Display**
 	 - If the user clicks on the incorrect answer, the selected answer text will highlight red and the correct answer will be highlighted in green to inform the user which answer was correct.
+
 ![incorrect answer](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/incorrect-answer-image.png?raw=true)
+
   **The Time up Display**
 	 - If the user does not answer a question within the given time, a message will pop up to inform the user that they have ran out of time.
 
 ![popup display](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/popup-image.png?raw=true)
 
 
-	- The pop up display will disappear after 3 seconds , then the user will see the correct answer will highlight in green and the incorrect answers will highlight in red.
+- The pop up display will disappear after 3 seconds , then the user will see the correct answer will highlight in green and the incorrect answers will highlight in red.
+
 ![Run Out of Time Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/out-of-time-answer-image.png?raw=true)
+
  - **Completed Quiz Display**
 	 - At the end of the quiz, the main quiz area is replaced by a completed quiz display.
 	 - This informs the user that the quiz is complete.
@@ -202,11 +212,15 @@ The color palette was generated with the help from [Coolers](https://coolors.co/
 	- A message will also appear to the user depending on the user's score.
 	- Buttons to retry the quiz or return to the main menu are made available to the user.
 	- This is a valuable feature of the site as it informs the user about their completion of the quiz and provides them with options to go back to the main landing page or take another quiz.
+
 ![Trivia Complete](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/trivia-complete-image.png?raw=true)
+
  - **The Footer**
 	 - At the bottom of the page is a footer that contains text stating who created the quiz.
 	 - This adds more structure to the site and provides information on who created the site.
+
 ![Footer Image](https://github.com/GreenNinjaBoy/Star-Wars-Trivia-PP2/blob/main/assets/readme-images/footer-image.png?raw=true)
+
 **Future Features**
 Features that may be implemented in the future:
 
